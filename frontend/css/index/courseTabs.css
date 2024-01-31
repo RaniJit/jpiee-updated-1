@@ -1,0 +1,130 @@
+/* Styles for the courseTabs container */
+div.courseTabs-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* background: teal; */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+/* Styles for the courseTabs heading */
+h1.courseTabs-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: teal;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the tab container */
+.tabs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+/* Styles for the tab button */
+.tab {
+  cursor: pointer;
+  padding: 10px 15px;
+  color: teal;
+  background: white;
+  border: none;
+  box-shadow: inset 0px 4px 4px 0 rgba(0, 0, 0, 0.25); /* Inner shadow effect */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styles for the active tab */
+.tab.active-tab {
+  background: teal;
+  color: white;
+}
+
+/* Styles for the courseTabs content */
+.courseTabs-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  background: teal; /* Change background color to teal */
+  padding: 20px; /* Add padding for better spacing */
+  width: 100%;
+}
+
+/* Styles for the courseTabs outer box */
+.courseTabs-outerBox {
+  width: 160px;
+  height: 120px;
+  border: 1px solid teal;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: white;
+  text-decoration: none;
+}
+
+/* Styles for the courseTabs course name */
+.courseTabs-courseName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: teal;
+  text-align: left;
+  line-height: 18px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+button.tab.btn.btn-outline-light {
+  border-radius: 6px 6px 0 0;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+button.tab.btn.btn-outline-light:hover {
+  color: #ff9432;
+}
+button.tab.btn.btn-outline-light.active-tab:hover {
+  color: white;
+}
+.courseTabs-outerBox:hover {
+  background: #006666;
+  border-top: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  .courseTabs-courseName {
+    color: white;
+  }
+}
+
+/* for smaller screen size */
+
+@media screen and (max-width: 540px) {
+  h1.courseTabs-heading {
+    font-size: 28px;
+  }
+
+  /* Styles for the courseTabs outer box */
+  .courseTabs-outerBox {
+    width: 130px;
+    height: 100px;
+  }
+
+  /* Styles for the courseTabs course name */
+  .courseTabs-courseName {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+  }
+  button.tab.btn.btn-outline-light {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .courseTabs-content {
+    width: 100vw;
+  }
+}

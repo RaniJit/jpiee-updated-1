@@ -1,0 +1,56 @@
+/* Styles for the welcome container */
+div.welcome-container {
+  text-align: center;
+  margin-top: 150px;
+}
+
+/* Styles for the welcome heading */
+h1.welcome-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: teal;
+  font-size: 36px; /* Default font size for screens 768px and above */
+  margin-bottom: 20px;
+}
+
+/* Styles for the welcome paragraph */
+p.welcome-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px; /* Default font size for screens 768px and above */
+}
+
+/* Media query for screens less than 768px */
+@media (max-width: 767px) {
+  h1.welcome-heading {
+    font-size: 32px;
+  }
+
+  p.welcome-paragraph {
+    font-size: 16px;
+  }
+}
+
+/* Media query for screens less than 640px */
+@media (max-width: 639px) {
+  h1.welcome-heading {
+    font-size: 30px;
+  }
+
+  p.welcome-paragraph {
+    font-size: 15px;
+  }
+}
+
+/* Media query for screens less than 480px */
+@media (max-width: 479px) {
+  h1.welcome-heading {
+    font-size: 24px;
+  }
+
+  p.welcome-paragraph {
+    font-size: 13px;
+  }
+}

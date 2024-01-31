@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.upper-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-title {
+  color: #008080;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-top: 120px;
+}
+
+.img-section {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.img-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .header-pharmacy {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 32px;
+  }
+
+  .img-section {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header-pharmacy {
+    font-size: 28px;
+  }
+
+  .img-section {
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-pharmacy {
+    font-size: 22px;
+  }
+
+  .img-section {
+    margin: 10px;
+  }
+
+  .img-section img {
+    max-width: 100%;
+    height: 160px;
+  }
+}
+
+.text-container {
+  background: teal;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  margin: 14px;
+  align-items: center;
+  height: 50px;
+}
+p.title {
+  margin-bottom: 0;
+}
+
+.text-container:hover {
+  background-color: #013636;
+  cursor: pointer;
+}
+
+.lower-container {
+  margin-top: 80px;
+  margin-left: 20px;
+  color: #5e5e5e;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bttn {
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+button {
+  height: 50px;
+  background: teal;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+
+  padding: 0 12px;
+}
+
+button:hover {
+  background-color: #013636;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for screens with a maximum width of 600px */
+  .bttn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  button {
+    font-size: 12px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JPIEE - CNT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../../css/index/index.css" />
+    <link rel="stylesheet" href="../../../css/index/header.css" />
+    <link rel="stylesheet" href="../../../css/index/footer.css" />
+    <link rel="stylesheet" href="../../../css/courses/educationalCourses.css" />
+  </head>
+
+  <body>
+    <!-- header start -->
+    <header class="my-container">
+      <div class="my-logo">
+        <h1>JPIEE</h1>
+      </div>
+      <div class="my-navbar">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../aboutUs.html">About Us</a></li>
+        <li class="dropdown">
+          <a
+            href="../courses.html"
+            class="dropdown-toggle"
+            role="button"
+            id="coursesDropdown"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+            <li>
+              <a class="dropdown-item" href="../nursing/nursing.html"
+                >College of Nursing
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="../pharmacy/pharmacy.html"
+                >School of Pharmacy</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="../alliedMedSc/alliedMedSc.html"
+                >Allied Medical Science</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="../../hostel.html">Hostel</a></li>
+        <li><a href="../../facilities.html">Facilities</a></li>
+        <li><a href="../../scholarship.html">Scholarship</a></li>
+        <li><a href="../../announcements.html">Announcements</a></li>
+        <li><a href="../../contactUs.html">Contact Us</a></li>
+      </div>
+      <div>
+        <button
+          class="my-admission-query"
+          data-bs-toggle="modal"
+          data-bs-target="#admissionQueryModal"
+        >
+          Admission Query
+        </button>
+      </div>
+
+      <button
+        class="navbar-toggler d-md-none menu-button"
+        id="menuButton"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M20 7L4 7"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M20 12L4 12"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M20 17L4 17"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+            </g>
+          </svg>
+        </span>
+      </button>
+    </header>
+    <div class="collapse navbar-collapse mobile-menu" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../aboutUs.html">About</a>
+        </li>
+        <li class="nav-item">
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="../courses.html"
+              id="coursesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Courses
+            </a>
+            <ul
+              class="dropdown-menu forMobile"
+              aria-labelledby="coursesDropdown"
+            >
+              <li>
+                <a class="dropdown-item" href="../nursing/nursing.html"
+                  >College of Nursing</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../pharmacy/pharmacy.html"
+                  >School of Pharmacy</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../alliedMedSc/alliedMedSc.html"
+                  >Allied Medical Science</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../hostel.html">Hostel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../facilities.html">Facilities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../scholarship.html">Scholarship</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../announcements.html">Announcements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../contactUs.html">Contact</a>
+        </li>
+      </ul>
+      <!-- Admission Query Button for smaller screens -->
+      <button
+        type="button"
+        class="btn btn-primary d-md-none"
+        data-bs-toggle="modal"
+        data-bs-target="#admissionQueryModal"
+      >
+        Admission Query
+      </button>
+    </div>
+    <!-- header end -->
+    <!-- write code below this -->
+    <div class="upper-container">
+      <div class="header-title">ALLIED MEDICAL SCIENCE</div>
+      <div class="img-section">
+        <img
+          src="../../../assets/desktop/images/courses/alliedMedSc/AlliedmedicalScience.png"
+          alt="AlliedmedicalScience"
+        />
+      </div>
+
+      <div class="text-container">
+        <p class="title">Certified Neuro Technician (CNT)</p>
+      </div>
+
+      <div class="main-section">
+        <ul>
+          <li>
+            <p><strong>Course Duration :</strong> 2 Years</p>
+          </li>
+          <li>Seats Available : 40 (Government seat-34, Management seat-6)</li>
+          <p class="note">
+            Note : The Number of seats are subjected to change as per the
+            availability and govt. protocol.
+          </p>
+
+          <li><strong>Eligibility Criteria :</strong></li>
+          <ol>
+            <li>Candidate must be of 17 years of age as on 31.12.2023</li>
+            <li>Candidate must be passed 10+2 science.</li>
+            <li>
+              Candidate must have passed Odia up to M.E standard in case of
+              govt. institutions and govt. seats in private institutions.
+            </li>
+            <li>Candidate shall be medically fit for the course.</li>
+            <li>Both male and female candidates are eligible to apply.</li>
+          </ol>
+          <li>
+            <strong> Selection Procedure :</strong> Selection of candidates is
+            made on the basis of merit according to the mark secured in 10+2
+            science Examination. Management quota seats are filled on the basis
+            of merit of candidate.
+          </li>
+        </ul>
+      </div>
+
+      <div class="lower-container">
+        View more courses of Allied Medical Science:
+        <div class="bttn">
+          <a href="./dmlt.html"> <button>DMLT</button></a>
+          <a href="./dmrt.html"><button>DMRT</button></a>
+          <a href="./dpt.html"><button>DPT</button></a>
+          <a href="./drtt.html"><button>DRTT</button></a>
+          <a href="./coa.html"><button>COA</button></a>
+          <a href="./cosa.html"><button>COSA</button></a>
+          <a href="./cclt.html"><button>CCLT</button></a>
+          <a href="./cdt.html"><button>CDT</button></a>
+          <a href="./cott.html"><button>COTT</button></a>
+          <a href="./crt.html"><button>CRT</button></a>
+          <a href="./cecgt.html"><button>CECGT</button></a>
+          <a href="./ceegt.html"><button>CEEGT</button></a>
+          <a href="./cemgt.html"><button>CEMGT</button></a>
+          <a href="./cbca.html"><button>CBCA</button></a>
+          <a href="./ccfa.html"><button>CCFA</button></a>
+          <a href="./cwt.html"><button>CWT</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- write code above this -->
+    <!-- footer code start -->
+    <!-- code for footer start -->
+    <footer class="footer-container">
+      <div class="footer-logo-container">
+        <h1>JPIEE</h1>
+      </div>
+      <div class="footer-quicklinks-container">
+        <h5>Quick Links</h5>
+        <ul class="links-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="./courses/courses.html">Courses</a></li>
+          <li><a href="./facilities.html">Facilities</a></li>
+          <li><a href="./hostel.html">Hostel</a></li>
+          <li><a href="./scholarship.html">Scholarship</a></li>
+          <li><a href="./announcements.html">Announcements</a></li>
+          <li><a href="./contactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact-container">
+        <h5>Contact Us</h5>
+        <div class="footer-contactAddress">
+          <img
+            class="contact-logo"
+            src="../../../assets/desktop/icons/location.svg"
+            alt="address logo"
+          />
+          <p class="footer-contactPara">
+            Jaiprakash Institute of Education and Erudition <br />
+            (A Unit of Jaiprakash Hospital & Research Centre) <br />
+            Nitya Complex, Near Viswakarma Mandir, TCI Road <br />
+            Rourkela - 769004, Odisha.
+          </p>
+        </div>
+        <div class="footer-mobile">
+          <img
+            class="contact-logo"
+            src="../../../assets/desktop/icons/mobile.svg"
+            alt="mobile logo"
+          />
+          <p class="footer-contactPara">9078884839, 9078884827</p>
+        </div>
+        <div class="footer-email">
+          <img
+            class="contact-logo"
+            src="../../../assets/desktop/icons/email.svg"
+            alt="email logo"
+          />
+          <p class="footer-contactPara">jpiee@jaiprakashhospitals.com</p>
+        </div>
+      </div>
+    </footer>
+    <!-- code for footer end -->
+    <!-- footer code end -->
+    <!-- script start -->
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script end -->
+    <!-- Add this code after the closing </script> tag in your body -->
+    <!-- this is the code for modal start-->
+    <div
+      class="modal fade"
+      id="admissionQueryModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Admission Query</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Number"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Address"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <select class="form-select" aria-label="Select Course">
+                  <option selected disabled>Select Course</option>
+                  <option value="B.Sc Nursing">B.Sc Nursing</option>
+                  <option value="General nursing & Midwifery (GNM)">
+                    General nursing & Midwifery (GNM)
+                  </option>
+                  <option value="Auxiliary Nursing & Midwifery (ANM)">
+                    Auxiliary Nursing & Midwifery (ANM)
+                  </option>
+                  <option value="Diploma in Pharmacy (D. Pharma)">
+                    Diploma in Pharmacy (D. Pharma)
+                  </option>
+                  <option
+                    value="Diploma in Medical Laboratory Technology (DMLT)"
+                  >
+                    Diploma in Medical Laboratory Technology (DMLT)
+                  </option>
+                  <option
+                    value="Diploma in Medical Radiation Technology (DMRT)"
+                  >
+                    Diploma in Medical Radiation Technology (DMRT)
+                  </option>
+                  <option value="Diploma in Perfusion Technology (DPT)">
+                    Diploma in Perfusion Technology (DPT)
+                  </option>
+                  <option
+                    value="Diploma in Radiation Therapy Technology (DRTT)"
+                  >
+                    Diploma in Radiation Therapy Technology (DRTT)
+                  </option>
+                  <option value="Certified Ophthalmic Assistant (COA)">
+                    Certified Ophthalmic Assistant (COA)
+                  </option>
+                  <option
+                    value="Certified Ophthalmic Surgical Assistant (COSA)"
+                  >
+                    Certified Ophthalmic Surgical Assistant (COSA)
+                  </option>
+                  <option value="Certified Cath Lab Technician (CCLT)">
+                    Certified Cath Lab Technician (CCLT)
+                  </option>
+                  <option value="Certified Dialysis Technician (CDT)">
+                    Certified Dialysis Technician (CDT)
+                  </option>
+                  <option value="Certified Neuro Technician (CNT)">
+                    Certified Neuro Technician (CNT)
+                  </option>
+                  <option value="Certified OT Technician (COTT)">
+                    Certified OT Technician (COTT)
+                  </option>
+                  <option value="Certified Respiratory Therapist (CRT)">
+                    Certified Respiratory Therapist (CRT)
+                  </option>
+                  <option value="Certified ECG Technicians (CECGT)">
+                    Certified ECG Technicians (CECGT)
+                  </option>
+                  <option value="Certified EEG Technicians (CEEGT)">
+                    Certified EEG Technicians (CEEGT)
+                  </option>
+                  <option value="Certified EMG Technicians (CEMGT)">
+                    Certified EMG Technicians (CEMGT)
+                  </option>
+                  <option value="Certified Blood Collection Assistant (CBCA)">
+                    Certified Blood Collection Assistant (CBCA)
+                  </option>
+                  <option value="Certified Course in First Aid (CCFA)">
+                    Certified Course in First Aid (CCFA)
+                  </option>
+                  <option value="Certified Ward Technicians (CWT)">
+                    Certified Ward Technicians (CWT)
+                  </option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- this is the code for modal end-->
+  </body>
+</html>

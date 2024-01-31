@@ -1,0 +1,145 @@
+/* header */
+.my-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  background: teal;
+  padding: 0 8px;
+  gap: 36px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+/* css for logo start */
+.my-logo {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+/* css for logo end */
+
+/* css for navbar start */
+a {
+  text-decoration: none;
+  color: white;
+}
+.my-navbar {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+.my-admission-query {
+  border-radius: 6px;
+  border: none;
+  background: #ff9432;
+  padding: 8px;
+  color: white;
+  font-weight: 500;
+}
+
+a#coursesDropdown.dropdown-toggle {
+  color: white;
+  text-decoration: none;
+}
+ul.dropdown-menu.show {
+  margin-top: 38px !important;
+  border-radius: 0;
+  background: teal;
+  border: 0 0 6px solid white 0;
+}
+a.dropdown-item {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+/* css for navbar end */
+
+/* css for modal start  */
+div.modal-header {
+  background: teal;
+  color: white;
+  border-bottom: 2px solid white;
+}
+div.modal-body {
+  background: teal;
+}
+button.btn.btn-primary {
+  border-radius: 6px;
+  border: none;
+  background: #ff9432;
+  padding: 8px;
+  color: white;
+  font-weight: 500;
+}
+
+/* css for modal end  */
+
+/* Media Queries for Responsive Design */
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .my-navbar {
+    display: none; /* hide the navbar by default on smaller screens */
+  }
+
+  .my-admission-query {
+    display: none; /* hide the admission query button by default on smaller screens */
+  }
+
+  .my-container {
+    justify-content: space-between; /* adjust spacing for small screens */
+  }
+
+  .menu-button {
+    display: block; /* show the menu button by default on smaller screens */
+    background: #ff9432;
+    padding: 8px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+  }
+}
+@media (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+  div#navbarNav.navbar-collapse.mobile-menu.collapse.show {
+    display: none;
+  }
+}
+
+ul.navbar-nav {
+  background: teal;
+  max-width: 300px;
+  color: white;
+}
+a.nav-link {
+  margin-left: 36px;
+}
+li.nav-item {
+  border-bottom: 1px solid white;
+}
+ul.dropdown-menu.forMobile.show {
+  margin-top: 0px !important;
+}
+div#navbarNav.navbar-collapse.mobile-menu {
+  max-width: 300px;
+  position: fixed;
+  z-index: 10;
+  top: 100px;
+  min-width: 200px;
+}
+#successMessage {
+  color: white !important;
+}

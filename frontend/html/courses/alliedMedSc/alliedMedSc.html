@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JPIEE - Allied Medical Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../../css/index/index.css" />
+    <link rel="stylesheet" href="../../../css/index/header.css" />
+    <link rel="stylesheet" href="../../../css/index/footer.css" />
+    <link rel="stylesheet" href="../../../css/courses/educationalWings.css" />
+  </head>
+
+  <body>
+    <!-- header start -->
+    <header class="my-container">
+      <div class="my-logo">
+        <h1>JPIEE</h1>
+      </div>
+      <div class="my-navbar">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../aboutUs.html">About Us</a></li>
+        <li class="dropdown">
+          <a
+            href="../courses.html"
+            class="dropdown-toggle"
+            role="button"
+            id="coursesDropdown"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+            <li>
+              <a class="dropdown-item" href="../nursing/nursing.html"
+                >College of Nursing
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="../pharmacy/pharmacy.html"
+                >School of Pharmacy</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="../alliedMedSc/alliedMedSc.html"
+                >Allied Medical Science</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="../../hostel.html">Hostel</a></li>
+        <li><a href="../../facilities.html">Facilities</a></li>
+        <li><a href="../../scholarship.html">Scholarship</a></li>
+        <li><a href="../../announcements.html">Announcements</a></li>
+        <li><a href="../../contactUs.html">Contact Us</a></li>
+      </div>
+      <div>
+        <button
+          class="my-admission-query"
+          data-bs-toggle="modal"
+          data-bs-target="#admissionQueryModal"
+        >
+          Admission Query
+        </button>
+      </div>
+
+      <button
+        class="navbar-toggler d-md-none menu-button"
+        id="menuButton"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M20 7L4 7"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M20 12L4 12"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M20 17L4 17"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+            </g>
+          </svg>
+        </span>
+      </button>
+    </header>
+    <div class="collapse navbar-collapse mobile-menu" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../aboutUs.html">About</a>
+        </li>
+        <li class="nav-item">
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="../courses.html"
+              id="coursesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Courses
+            </a>
+            <ul
+              class="dropdown-menu forMobile"
+              aria-labelledby="coursesDropdown"
+            >
+              <li>
+                <a class="dropdown-item" href="../nursing/nursing.html"
+                  >College of Nursing</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../pharmacy/pharmacy.html"
+                  >School of Pharmacy</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../alliedMedSc/alliedMedSc.html"
+                  >Allied Medical Science</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../hostel.html">Hostel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../facilities.html">Facilities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../scholarship.html">Scholarship</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../announcements.html">Announcements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../contactUs.html">Contact</a>
+        </li>
+      </ul>
+      <!-- Admission Query Button for smaller screens -->
+      <button
+        type="button"
+        class="btn btn-primary d-md-none"
+        data-bs-toggle="modal"
+        data-bs-target="#admissionQueryModal"
+      >
+        Admission Query
+      </button>
+    </div>
+    <!-- header end -->
+    <!-- write code below this -->
+    <div class="upper-container">
+      <div class="header-title">ALLIED MEDICAL SCIENCE</div>
+      <div class="img-section">
+        <img
+          src="../../../assets/desktop/images/courses/alliedMedSc/AlliedmedicalScience.png"
+          alt="AlliedmedicalScience"
+        />
+      </div>
+      <a href="../alliedMedSc/dmlt.html"
+        ><div class="text-container">
+          <p class="title">Diploma in Medical Laboratory Technology (DMLT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/dmrt.html"
+        ><div class="text-container">
+          <p class="title">Diploma in Medical Radiation Technology (DMRT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/dpt.html"
+        ><div class="text-container">
+          <p class="title">Diploma in Perfusion Technology (DPT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/drtt.html"
+        ><div class="text-container">
+          <p class="title">Diploma in Radiation Therapy Technology (DRTT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/coa.html"
+        ><div class="text-container">
+          <p class="title">Certified Ophthalmic Assistant (COA)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/cosa.html"
+        ><div class="text-container">
+          <p class="title">Certified Ophthalmic Surgical Assistant (COSA)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/cclt.html"
+        ><div class="text-container">
+          <p class="title">Certified Cath Lab Technician (CCLT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/cdt.html"
+        ><div class="text-container">
+          <p class="title">Certified Dialysis Technician (CDT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/cnt.html"
+        ><div class="text-container">
+          <p class="title">Certified Neuro Technician (CNT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/cott.html"
+        ><div class="text-container">
+          <p class="title">Certified OT Technician (COTT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/crt.html"
+        ><div class="text-container">
+          <p class="title">Certified Respiratory Therapist (CRT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/cecgt.html"
+        ><div class="text-container">
+          <p class="title">Certified ECG Technicians (CECGT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/ceegt.html"
+        ><div class="text-container">
+          <p class="title">Certified EEG Technicians (CEEGT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/cemgt.html"
+        ><div class="text-container">
+          <p class="title">Certified EMG Technicians (CEMGT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/cbca.html"
+        ><div class="text-container">
+          <p class="title">Certified Blood Collection Assistant (CBCA)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/ccfa.html"
+        ><div class="text-container">
+          <p class="title">Certified Course in First Aid (CCFA)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+      <a href="../alliedMedSc/cwt.html"
+        ><div class="text-container">
+          <p class="title">Certified Ward Technicians (CWT)</p>
+          <img
+            src="../../../assets/desktop/icons/nextArrowIcon.svg"
+            alt="next-icon"
+          />
+        </div>
+      </a>
+
+      <div class="lower-container">
+        View more courses at JPIEE:
+        <div class="bttn">
+          <a href="../nursing/nursing.html">
+            <button>College of Nursing</button></a
+          >
+          <a href="../pharmacy/pharmacy.html"
+            ><button>School of Pharmacy</button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- write code above this -->
+    <!-- footer code start -->
+    <!-- code for footer start -->
+    <footer class="footer-container">
+      <div class="footer-logo-container">
+        <h1>JPIEE</h1>
+      </div>
+      <div class="footer-quicklinks-container">
+        <h5>Quick Links</h5>
+        <ul class="links-list">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="./courses/courses.html">Courses</a></li>
+          <li><a href="./facilities.html">Facilities</a></li>
+          <li><a href="./hostel.html">Hostel</a></li>
+          <li><a href="./scholarship.html">Scholarship</a></li>
+          <li><a href="./announcements.html">Announcements</a></li>
+          <li><a href="./contactUs.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact-container">
+        <h5>Contact Us</h5>
+        <div class="footer-contactAddress">
+          <img
+            class="contact-logo"
+            src="../../../assets/desktop/icons/location.svg"
+            alt="address logo"
+          />
+          <p class="footer-contactPara">
+            Jaiprakash Institute of Education and Erudition <br />
+            (A Unit of Jaiprakash Hospital & Research Centre) <br />
+            Nitya Complex, Near Viswakarma Mandir, TCI Road <br />
+            Rourkela - 769004, Odisha.
+          </p>
+        </div>
+        <div class="footer-mobile">
+          <img
+            class="contact-logo"
+            src="../../../assets/desktop/icons/mobile.svg"
+            alt="mobile logo"
+          />
+          <p class="footer-contactPara">9078884839, 9078884827</p>
+        </div>
+        <div class="footer-email">
+          <img
+            class="contact-logo"
+            src="../../../assets/desktop/icons/email.svg"
+            alt="email logo"
+          />
+          <p class="footer-contactPara">jpiee@jaiprakashhospitals.com</p>
+        </div>
+      </div>
+    </footer>
+    <!-- code for footer end -->
+    <!-- footer code end -->
+    <!-- script start -->
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script end -->
+    <!-- Add this code after the closing </script> tag in your body -->
+    <!-- this is the code for modal start-->
+    <div
+      class="modal fade"
+      id="admissionQueryModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Admission Query</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="queryForm">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  id="fullName"
+                  class="form-control"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  id="number"
+                  class="form-control"
+                  placeholder="Number"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  id="address"
+                  class="form-control"
+                  placeholder="Address"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <select
+                
+                  id="selectedCourse"
+                  class="form-select"
+                  aria-label="Select Course"
+                >
+                  <option selected  value="Select Course" >Select Course</option>
+                  <option value="B.Sc Nursing">B.Sc Nursing</option>
+                  <option value="General nursing & Midwifery (GNM)">
+                    General nursing & Midwifery (GNM)
+                  </option>
+                  <option value="Auxiliary Nursing & Midwifery (ANM)">
+                    Auxiliary Nursing & Midwifery (ANM)
+                  </option>
+                  <option value="Diploma in Pharmacy (D. Pharma)">
+                    Diploma in Pharmacy (D. Pharma)
+                  </option>
+                  <option
+                    value="Diploma in Medical Laboratory Technology (DMLT)"
+                  >
+                    Diploma in Medical Laboratory Technology (DMLT)
+                  </option>
+                  <option
+                    value="Diploma in Medical Radiation Technology (DMRT)"
+                  >
+                    Diploma in Medical Radiation Technology (DMRT)
+                  </option>
+                  <option value="Diploma in Perfusion Technology (DPT)">
+                    Diploma in Perfusion Technology (DPT)
+                  </option>
+                  <option
+                    value="Diploma in Radiation Therapy Technology (DRTT)"
+                  >
+                    Diploma in Radiation Therapy Technology (DRTT)
+                  </option>
+                  <option value="Certified Ophthalmic Assistant (COA)">
+                    Certified Ophthalmic Assistant (COA)
+                  </option>
+                  <option
+                    value="Certified Ophthalmic Surgical Assistant (COSA)"
+                  >
+                    Certified Ophthalmic Surgical Assistant (COSA)
+                  </option>
+                  <option value="Certified Cath Lab Technician (CCLT)">
+                    Certified Cath Lab Technician (CCLT)
+                  </option>
+                  <option value="Certified Dialysis Technician (CDT)">
+                    Certified Dialysis Technician (CDT)
+                  </option>
+                  <option value="Certified Neuro Technician (CNT)">
+                    Certified Neuro Technician (CNT)
+                  </option>
+                  <option value="Certified OT Technician (COTT)">
+                    Certified OT Technician (COTT)
+                  </option>
+                  <option value="Certified Respiratory Therapist (CRT)">
+                    Certified Respiratory Therapist (CRT)
+                  </option>
+                  <option value="Certified ECG Technicians (CECGT)">
+                    Certified ECG Technicians (CECGT)
+                  </option>
+                  <option value="Certified EEG Technicians (CEEGT)">
+                    Certified EEG Technicians (CEEGT)
+                  </option>
+                  <option value="Certified EMG Technicians (CEMGT)">
+                    Certified EMG Technicians (CEMGT)
+                  </option>
+                  <option value="Certified Blood Collection Assistant (CBCA)">
+                    Certified Blood Collection Assistant (CBCA)
+                  </option>
+                  <option value="Certified Course in First Aid (CCFA)">
+                    Certified Course in First Aid (CCFA)
+                  </option>
+                  <option value="Certified Ward Technicians (CWT)">
+                    Certified Ward Technicians (CWT)
+                  </option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea
+                  id="messageBox"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+              <button
+                type="button" class="btn btn-primary"
+                id="submitButton">Submit</button>
+              </button>
+            </form>
+            <div id="successMessage" style="display: none;">
+              <h3>Query submitted successfully!</h3>
+              <h3>Thank you for contacting JPIEE. Our team will contact you soon!</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- this is the code for modal end-->
+    <script type="module" src="../../../modules/submitForm.js"></script>
+  </body>
+</html>
