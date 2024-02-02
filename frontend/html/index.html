@@ -27,9 +27,8 @@
     <link rel="stylesheet" href="../css/index/welcomeText.css" />
     <link rel="stylesheet" href="../css/index/courseTabs.css" />
     <link rel="stylesheet" href="../css/index/placementAssistance.css" />
+    <link rel="stylesheet" href="../css/index/requestCallback.css" />
     <link rel="stylesheet" href="../css/index/footer.css" />
-
-    <script async type="module" src="../modules/submitForm.js"></script>
 
   </head>
 
@@ -37,7 +36,8 @@
     <!-- header start -->
     <header class="my-container">
       <div class="my-logo">
-        <h1>JPIEE</h1>
+        <a href="#"><h1>JPIEE</h1></a>
+        
       </div>
       <div class="my-navbar">
         <li><a href="#">Home</a></li>
@@ -472,11 +472,156 @@
     </div>
     <!-- placement assistance code end-->
     <!-- request callback code start---------------------------------------------------->
+        <!-- request callback code start  -->
+        <div class="contact-form">
+          <div class="callback-heading">
+            <h1>Request a Callback</h1>
+          </div>
+          <form class="callbackForm" id="queryForm">
+            <div class="form-row">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  id="fullName"
+                  class="form-control"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  id="number"
+                  class="form-control"
+                  placeholder="Mobile Number"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  id="address"
+                  class="form-control"
+                  placeholder="Address"
+                  required
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+                <select
+                
+                id="selectedCourse"
+                class="form-select"
+                aria-label="Select Course"
+              >
+                <option selected  value="Select Course" >Select Course</option>
+                <option value="B.Sc Nursing">B.Sc Nursing</option>
+                <option value="General nursing & Midwifery (GNM)">
+                  General nursing & Midwifery (GNM)
+                </option>
+                <option value="Auxiliary Nursing & Midwifery (ANM)">
+                  Auxiliary Nursing & Midwifery (ANM)
+                </option>
+                <option value="Diploma in Pharmacy (D. Pharma)">
+                  Diploma in Pharmacy (D. Pharma)
+                </option>
+                <option
+                  value="Diploma in Medical Laboratory Technology (DMLT)"
+                >
+                  Diploma in Medical Laboratory Technology (DMLT)
+                </option>
+                <option
+                  value="Diploma in Medical Radiation Technology (DMRT)"
+                >
+                  Diploma in Medical Radiation Technology (DMRT)
+                </option>
+                <option value="Diploma in Perfusion Technology (DPT)">
+                  Diploma in Perfusion Technology (DPT)
+                </option>
+                <option
+                  value="Diploma in Radiation Therapy Technology (DRTT)"
+                >
+                  Diploma in Radiation Therapy Technology (DRTT)
+                </option>
+                <option value="Certified Ophthalmic Assistant (COA)">
+                  Certified Ophthalmic Assistant (COA)
+                </option>
+                <option
+                  value="Certified Ophthalmic Surgical Assistant (COSA)"
+                >
+                  Certified Ophthalmic Surgical Assistant (COSA)
+                </option>
+                <option value="Certified Cath Lab Technician (CCLT)">
+                  Certified Cath Lab Technician (CCLT)
+                </option>
+                <option value="Certified Dialysis Technician (CDT)">
+                  Certified Dialysis Technician (CDT)
+                </option>
+                <option value="Certified Neuro Technician (CNT)">
+                  Certified Neuro Technician (CNT)
+                </option>
+                <option value="Certified OT Technician (COTT)">
+                  Certified OT Technician (COTT)
+                </option>
+                <option value="Certified Respiratory Therapist (CRT)">
+                  Certified Respiratory Therapist (CRT)
+                </option>
+                <option value="Certified ECG Technicians (CECGT)">
+                  Certified ECG Technicians (CECGT)
+                </option>
+                <option value="Certified EEG Technicians (CEEGT)">
+                  Certified EEG Technicians (CEEGT)
+                </option>
+                <option value="Certified EMG Technicians (CEMGT)">
+                  Certified EMG Technicians (CEMGT)
+                </option>
+                <option value="Certified Blood Collection Assistant (CBCA)">
+                  Certified Blood Collection Assistant (CBCA)
+                </option>
+                <option value="Certified Course in First Aid (CCFA)">
+                  Certified Course in First Aid (CCFA)
+                </option>
+                <option value="Certified Ward Technicians (CWT)">
+                  Certified Ward Technicians (CWT)
+                </option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea
+                id="messageBox"
+                class="form-control"
+                rows="3"
+                placeholder="Message"
+              ></textarea>
+            </div>
+            <div class="center-btn"><button type="button" class="btn btn-primary" id="submitButton">
+              Submit
+            </button></div>
+            
+          </form>
+          <div id="successMessage" style="display: none">
+            <h3>Callback request submitted successfully!</h3>
+            <h3>Thank you for contacting JPIEE. Our team will contact you soon!</h3>
+          </div>
+        </div>
+        <!-- request callback code end  -->
     <!-- request callback code end------------------------------------------------------>
     <!-- code for footer start -->
     <footer class="footer-container">
       <div class="footer-logo-container">
-        <h1>JPIEE</h1>
+        <a href="#"><h1>JPIEE</h1></a>
+        
       </div>
       <div class="footer-quicklinks-container">
         <h5>Quick Links</h5>
@@ -687,8 +832,8 @@
               </button>
             </form>
             <div id="successMessage" style="display: none;">
-              <h5>Query submitted successfully!</h5>
-              <h5>Thank you for contacting JPIEE. Our team will contact you soon!</h5>
+              <h3>Query submitted successfully!</h3>
+              <h3>Thank you for contacting JPIEE. Our team will contact you soon!</h3>
             </div>
           </div>
         </div>
