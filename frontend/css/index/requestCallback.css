@@ -5,8 +5,8 @@
     margin-bottom: 40px;
   } */
 .contact-form {
-  background: url("../../assets/desktop/images/index/wepik-export.png")
-    center/cover no-repeat;
+  background: url("../../assets/desktop/images/index/requestCallback.png")
+    center/cover no-repeat fixed;
   padding: 20px;
   border-radius: 10px;
   backdrop-filter: blur(10px);
