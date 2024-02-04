@@ -40,6 +40,9 @@
   max-width: 800px;
   height: auto;
 }
+.img-dining > img {
+  width: 100%;
+}
 
 @media screen and (max-width: 768px) {
   .middle-content {
