@@ -31,6 +31,9 @@
   color: white;
   background: teal;
 }
+#contact_successMessage {
+  color: teal;
+}
 
 @media (max-width: 768px) {
   .contact-container {
