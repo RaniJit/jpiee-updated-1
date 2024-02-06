@@ -1,5 +1,8 @@
 function submitForm() {
   // Disable the submit button to prevent multiple submissions
+
+  console.log("submitForm function called");
+
   document.getElementById("submitButton").disabled = true;
 
   // Get form values
@@ -63,6 +66,8 @@ function submitForm() {
 }
 
 const submitButton = document.getElementById("submitButton");
-submitButton.addEventListener("click", () => {
+
+submitButton.addEventListener("click", (event) => {
   submitForm();
+  event.preventDefault();
 });
