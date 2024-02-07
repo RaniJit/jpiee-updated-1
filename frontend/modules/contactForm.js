@@ -6,12 +6,12 @@ function submitContactForm() {
   document.getElementById("contact_submitForm").disabled = true;
 
   // Get form values
-  let fullName = document.getElementById("fullName").value;
-  let email = document.getElementById("email").value;
-  let mobileNumber = document.getElementById("number").value;
-  let address = document.getElementById("address").value;
-  let selectedCourse = document.getElementById("selectedCourse").value;
-  let messageBox = document.getElementById("messageBox").value;
+  let fullName = document.getElementById("contact-fullName").value;
+  let email = document.getElementById("contact-email").value;
+  let mobileNumber = document.getElementById("contact-number").value;
+  let address = document.getElementById("contact-address").value;
+  let selectedCourse = document.getElementById("contact-selectedCourse").value;
+  let messageBox = document.getElementById("contact-messageBox").value;
 
   // Perform basic form validation
   if (!fullName || !email || !mobileNumber || !address) {
