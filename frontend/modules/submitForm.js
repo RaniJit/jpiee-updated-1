@@ -46,8 +46,10 @@ function submitForm() {
     .then((response) => {
       if (response.ok) {
         // Display success message
-        document.getElementById("successMessage").style.display = "block";
-
+        const successMessage = document.getElementById("successMessage");
+        if (successMessage) {
+          successMessage.style.display = "block";
+        }
         // Reset form fields
         document.getElementById("queryForm").reset();
       } else {
@@ -65,9 +67,9 @@ function submitForm() {
     });
 }
 
-const submitButton = document.getElementById("submitButton");
+const queryForm = document.getElementById("queryForm");
 
-submitButton.addEventListener("click", (event) => {
+queryForm.addEventListener("submit", (event) => {
   submitForm();
   event.preventDefault();
 });

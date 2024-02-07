@@ -471,16 +471,16 @@
     <!-- placement assistance code end-->
     <!-- request callback code start---------------------------------------------------->
     <!-- request callback code start  -->
-    <div class="contact-form">
+    <div class="callback-form">
       <div class="callback-heading">
         <h1>Request a Callback</h1>
       </div>
-      <form class="callbackForm" id="queryForm">
+      <form class="callbackForm" id="callback_queryForm">
         <div class="form-row">
           <div class="mb-3">
             <input
               type="text"
-              id="fullName"
+              id="callback-fullName"
               class="form-control"
               placeholder="Full Name"
               required
@@ -489,7 +489,7 @@
           <div class="mb-3">
             <input
               type="email"
-              id="email"
+              id="callback-email"
               class="form-control"
               placeholder="Email"
               required
@@ -500,7 +500,7 @@
           <div class="mb-3">
             <input
               type="tel"
-              id="number"
+              id="callback-number"
               class="form-control"
               placeholder="Mobile Number"
               required
@@ -509,7 +509,7 @@
           <div class="mb-3">
             <input
               type="text"
-              id="address"
+              id="callback-address"
               class="form-control"
               placeholder="Address"
               required
@@ -518,7 +518,7 @@
         </div>
         <div class="mb-3">
           <select
-            id="selectedCourse"
+            id="callback-selectedCourse"
             class="form-select"
             aria-label="Select Course"
           >
@@ -588,21 +588,25 @@
         </div>
         <div class="mb-3">
           <textarea
-            id="messageBox"
+            id="callback-messageBox"
             class="form-control"
             rows="3"
             placeholder="Message"
           ></textarea>
         </div>
         <div class="center-btn">
-          <button type="button" class="btn btn-primary" id="submitButton">
+          <button
+            type="submit"
+            class="btn btn-primary"
+            id="callback_submitButton"
+          >
             Submit
           </button>
         </div>
       </form>
-      <div id="successMessage" style="display: none">
-        <h3>Callback request submitted successfully!</h3>
-        <h3>Thank you for contacting JPIEE. Our team will contact you soon!</h3>
+      <div id="callback_successMessage" style="display: none">
+        <h4>Callback request submitted successfully!</h4>
+        <h4>Thank you for contacting JPIEE. Our team will contact you soon!</h4>
       </div>
     </div>
     <!-- request callback code end  -->
@@ -813,8 +817,7 @@
                   placeholder="Message"
                 ></textarea>
               </div>
-              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-              <button type="button" class="btn btn-primary" id="submitButton">
+              <button type="submit" class="btn btn-primary" id="submitButton">
                 Submit
               </button>
             </form>
@@ -829,6 +832,7 @@
       </div>
     </div>
     <!-- this is the code for modal end-->
-    <script type="module" src="../modules/submitForm.js"></script>
+    <script async type="module" src="../modules/submitForm.js"></script>
+    <script async type="module" src="../modules/callbackForm.js"></script>
   </body>
 </html>
