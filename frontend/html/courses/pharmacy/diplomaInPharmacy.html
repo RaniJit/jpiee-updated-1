@@ -291,10 +291,11 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form id="queryForm">
               <div class="mb-3">
                 <input
                   type="text"
+                  id="fullName"
                   class="form-control"
                   placeholder="Full Name"
                   required
@@ -303,6 +304,7 @@
               <div class="mb-3">
                 <input
                   type="email"
+                  id="email"
                   class="form-control"
                   placeholder="Email"
                   required
@@ -311,6 +313,7 @@
               <div class="mb-3">
                 <input
                   type="tel"
+                  id="number"
                   class="form-control"
                   placeholder="Number"
                   required
@@ -319,14 +322,20 @@
               <div class="mb-3">
                 <input
                   type="text"
+                  id="address"
                   class="form-control"
                   placeholder="Address"
                   required
                 />
               </div>
               <div class="mb-3">
-                <select class="form-select" aria-label="Select Course">
-                  <option selected disabled>Select Course</option>
+                <select
+                
+                  id="selectedCourse"
+                  class="form-select"
+                  aria-label="Select Course"
+                >
+                  <option selected  value="Select Course" >Select Course</option>
                   <option value="B.Sc Nursing">B.Sc Nursing</option>
                   <option value="General nursing & Midwifery (GNM)">
                     General nursing & Midwifery (GNM)
@@ -400,17 +409,27 @@
               </div>
               <div class="mb-3">
                 <textarea
+                  id="messageBox"
                   class="form-control"
                   rows="3"
                   placeholder="Message"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+              <button
+                type="submit" class="btn btn-primary"
+                id="submitButton">Submit</button>
+              </button>
             </form>
+            <div id="successMessage" style="display: none;">
+              <h4>Query submitted successfully!</h4>
+              <h4>Thank you for contacting JPIEE. Our team will contact you soon!</h4>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- this is the code for modal end-->
+    <script type="module" src="../../../modules/submitForm.js"></script>
   </body>
 </html>
