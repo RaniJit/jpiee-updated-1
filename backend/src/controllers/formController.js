@@ -57,6 +57,10 @@ async function submitForm(req, res) {
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.error("Error sending email:", error);
+        return res.status(500).json({
+          error: "Error sending email",
+          details: error.message,
+        });
       } else {
         console.log("Email sent:", info.response);
       }
