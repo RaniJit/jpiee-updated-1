@@ -4,7 +4,7 @@
     margin: 0 auto;
     margin-bottom: 40px;
   } */
-.contact-form {
+.callback-form {
   background: url("../../assets/desktop/images/index/requestCallback.png")
     center/cover no-repeat fixed;
   padding: 20px;
@@ -32,9 +32,13 @@
   justify-content: center;
 }
 
-#submitButton {
+#submitButton,
+#callback_submitButton {
   background: #ff9432;
   border: none;
+}
+#callback_successMessage {
+  color: white;
 }
 
 @media (min-width: 992px) {
