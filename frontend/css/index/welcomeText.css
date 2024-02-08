@@ -3,6 +3,9 @@ div.welcome-container {
   text-align: center;
   margin-top: 150px;
 }
+.welcome-paragraphs-container {
+  padding: 0 16px;
+}
 
 /* Styles for the welcome heading */
 h1.welcome-heading {

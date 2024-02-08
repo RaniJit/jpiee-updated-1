@@ -7,7 +7,7 @@ const contentContainer = document.querySelector(".courseTabs-content");
 const categoryAbbreviations = {
   "College of Nursing": "nursing",
   "School of Pharmacy": "pharmacy",
-  "Allied Medical Science": "alliedMedSc",
+  "School of Medical Technical Education": "alliedMedSc",
 };
 
 const courseAbbreviations = {

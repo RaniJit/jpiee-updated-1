@@ -12,7 +12,7 @@ const coursesData = [
     courses: [{ id: 4, name: "Diploma in Pharmacy (D. Pharma)" }],
   },
   {
-    category: "Allied Medical Science",
+    category: "School of Medical Technical Education",
     courses: [
       { id: 5, name: "Diploma in Medical Laboratory Technology (DMLT)" },
       { id: 6, name: "Diploma in Medical Radiation Technology (DMRT)" },
