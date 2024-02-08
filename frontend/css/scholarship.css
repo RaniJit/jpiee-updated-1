@@ -1,9 +1,6 @@
 .scholarship-container {
   margin-top: 120px;
 }
-.scholarship-container {
-  margin-top: 120px;
-}
 
 .scholarhip-header {
   display: flex;
@@ -11,11 +8,8 @@
   justify-content: center;
   color: teal;
 }
-
-.scholarship-para {
-  /* padding: 25px; */
-  font-weight: 400;
-  font-size: 25px;
+.container-scholar-para {
+  font-size: 20px;
 }
 
 .scholarshp-img img {
@@ -24,23 +18,17 @@
   margin-left: 350px;
 }
 
-.scholarship-mid-paragraph {
-  font-weight: 400;
-  font-size: 25px;
+.scholarshp-img {
+  display: flex;
 }
 
 .scholarship-benefits {
   font-weight: 400;
-  font-size: 25px;
-}
-
-.scholarship-lower-paragraph {
-  font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .scholarship-container {
-  margin-left: 30px;
+  padding: 0 16px;
 }
 
 .scholarhip-header1 {
@@ -55,34 +43,33 @@
   color: teal;
 }
 
-/* Add this at the end of your existing CSS */
-
-@media only screen and (max-width: 600px) {
-  /* Adjustments for small screens */
-
+@media (max-width: 768px) {
   .scholarship-container {
-    margin-left: 0;
-    padding: 10px;
-    /* Add padding for better readability on small screens */
+    padding: 0 16px;
   }
-
-  .scholarship-para,
-  .scholarship-mid-paragraph,
-  .scholarship-benefits,
-  .scholarship-lower-paragraph {
-    font-size: 18px;
-
-    /* Adjust font size for better readability on small screens */
-  }
-
   .scholarshp-img img {
     width: 100%;
-    /* Make the image fill the width of the container */
+    /* Make the image fill the container width */
     height: auto;
-    /* Maintain aspect ratio */
+    /* Maintain the aspect ratio */
     margin-left: 0;
-    /* Remove left margin */
+    /* Reset margin for responsiveness */
   }
+  .container-scholar-para {
+    font-size: 16px;
+  }
+}
 
-  /* You can add more adjustments as needed */
+@media (max-width: 480px) {
+  .scholarshp-img img {
+    width: 100%;
+    /* Make the image fill the container width */
+    height: auto;
+    /* Maintain the aspect ratio */
+    margin-left: 0;
+    /* Reset margin for responsiveness */
+  }
+  .container-scholar-para {
+    font-size: 16px;
+  }
 }
