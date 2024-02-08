@@ -15,3 +15,6 @@
 .page-link:hover {
   color: #ff9432;
 }
+ul#pagination.pagination {
+  flex-wrap: wrap;
+}
