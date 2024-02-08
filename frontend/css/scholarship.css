@@ -19,6 +19,7 @@
 
 .scholarshp-img {
   display: flex;
+  justify-content: center;
 }
 
 .scholarship-benefits {
