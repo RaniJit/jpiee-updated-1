@@ -1,3 +1,17 @@
-.announcements-container {
+.announcement-heading {
   margin-top: 120px;
+  color: teal;
+  font-weight: 900;
+  text-align: center;
+}
+.page-link {
+  color: teal;
+}
+.active > .page-link,
+.page-link.active {
+  background-color: teal;
+  border-color: teal;
+}
+.page-link:hover {
+  color: #ff9432;
 }

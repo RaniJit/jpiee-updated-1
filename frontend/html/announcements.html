@@ -201,11 +201,27 @@
     </div>
     <!-- header end -->
 
-    <!-- code for scholarship start  -->
-    <div class="announcements-container"><h1>This is announcements page by 11111111111111111111111</h1></div>
+    <!-- code for announcement start  -->
+    <!-- <div class="announcements-container"><h1>ANNOUNCEMENTS</h1></div> -->
+    <div class="container mt-5">
+      <h1 class="mb-4 announcement-heading">ANNOUNCEMENTS</h1>
 
+      <div class="table-responsive">
+        <table class="table table-hover table-bordered">
+          <tbody id="announcementContainer">
+            <!-- Announcements will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+
+      <nav aria-label="Page navigation">
+        <ul class="pagination" id="pagination">
+          <!-- Pagination links will be dynamically added here -->
+        </ul>
+      </nav>
+    </div>
      
-    <!-- code for scholarship end  -->
+    <!-- code for announcement end  -->
        <!-- code for footer start -->
        <footer class="footer-container">
         <div class="footer-logo-container">
@@ -428,6 +444,8 @@
       </div>
     </div>
     <!-- this is the code for modal end-->
+    <script src="../data/announcementsData/announcementsData.js"></script>
+    <script src="../modules/announcementTable.js"></script>
     <script type="module" src="../modules/submitForm.js"></script>
   </body>
 </html>
