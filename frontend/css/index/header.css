@@ -11,8 +11,8 @@
   top: 0;
   z-index: 99;
   width: 100%;
-  /* backdrop-filter: blur(10px);
-  background-color: rgba(0, 128, 128, 0.5); */
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 128, 128, 0.85);
 }
 
 /* css for logo start */
