@@ -1,9 +1,9 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-}
+} */
 
 .upper-container {
   max-width: 1200px;
@@ -33,46 +33,6 @@ body {
 .img-section img {
   max-width: 100%;
   height: auto;
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-  .header-pharmacy {
-    font-size: 32px;
-  }
-
-  .text {
-    font-size: 32px;
-  }
-
-  .img-section {
-    margin: 20px;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .header-pharmacy {
-    font-size: 28px;
-  }
-
-  .img-section {
-    margin: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .header-pharmacy {
-    font-size: 22px;
-  }
-
-  .img-section {
-    margin: 10px;
-  }
-
-  .img-section img {
-    max-width: 100%;
-    height: 160px;
-  }
 }
 
 .text-container {
@@ -120,7 +80,6 @@ button {
   border-radius: 6px;
   border: none;
   font-size: 16px;
-
   padding: 0 12px;
 }
 
@@ -133,11 +92,44 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
-  /* Adjust styles for screens with a maximum width of 600px */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 32px;
+  }
 
+  .img-section {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-title {
+    font-size: 28px;
+  }
+
+  .img-section {
+    margin: 15px;
+  }
   button {
     font-size: 12px;
     height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 22px;
+  }
+
+  .img-section {
+    margin: 10px;
+  }
+
+  .img-section img {
+    max-width: 100%;
+    height: 160px;
+  }
+  p.title {
+    font-size: 12px;
   }
 }
