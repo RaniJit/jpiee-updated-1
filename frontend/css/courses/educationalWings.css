@@ -133,4 +133,8 @@ a {
     font-size: 14px;
     font-weight: 600;
   }
+  .text-container > img {
+    width: 12px;
+    height: 12px;
+  }
 }
