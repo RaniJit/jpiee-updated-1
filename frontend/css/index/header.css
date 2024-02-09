@@ -43,6 +43,7 @@ a {
   background: #ff9432;
   color: white;
   font-weight: 500;
+  padding: 12px;
 }
 
 a#coursesDropdown.dropdown-toggle {
