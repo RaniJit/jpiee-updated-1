@@ -19,10 +19,11 @@
   color: white;
   text-align: center;
   padding: 16px 0;
-  font-family: "Montserrat", sans-serif;
 }
 .callback-heading > h1 {
   font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+
 }
 .callbackForm {
   padding: 0 32px 32px 32px;

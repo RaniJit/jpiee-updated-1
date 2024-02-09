@@ -18,3 +18,8 @@
 ul#pagination.pagination {
   flex-wrap: wrap;
 }
+.announcement-row > td {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
