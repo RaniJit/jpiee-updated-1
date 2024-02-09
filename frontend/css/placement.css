@@ -1,0 +1,76 @@
+.placement-container {
+  margin-left: 20px;
+}
+
+.placement-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+  color: teal;
+}
+
+.placement-paragraph {
+  font-size: 18px;
+  /* font-weight: 100; */
+  line-height: 1;
+}
+
+.placement-list {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.lower-placement {
+  font-size: 18px;
+  /* font-weight: 100; */
+  line-height: 1;
+
+}
+
+.img-placement {
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Add the following CSS for responsive design */
+/* Add the following CSS for responsive design */
+@media screen and (max-width: 768px) {
+  .placement-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    /* Add margin-right for better spacing on smaller screens */
+    padding: 12px;
+  }
+
+  .placement-heading {
+    font-size: 16px;
+    /* Increase font size for better visibility */
+    text-align: center;
+    /* Center align heading for smaller screens */
+  }
+
+  .placement-paragraph,
+  .placement-list,
+  .lower-placement {
+    font-size: 16px;
+    /* Adjust font size for smaller screens */
+    margin-left: 0;
+    /* Remove margin for better layout */
+  }
+
+  .img-placement {
+    margin-left: 0;
+    /* Remove margin for better layout */
+    text-align: center;
+    /* Center align image for smaller screens */
+  }
+
+  .img-placement img {
+    max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio for images */
+  }
+}
