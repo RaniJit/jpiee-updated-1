@@ -1,540 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JPIEE - Facilities</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
 
-    <link rel="stylesheet" href="../css/index/index.css" />
-    <link rel="stylesheet" href="../css/index/header.css" />
-    <link rel="stylesheet" href="../css/facilities.css" />
-    <link rel="stylesheet" href="../css/index/footer.css">
-  </head>
-  <body>
-    <!-- header start -->
-    <header class="my-container">
-      <div class="my-logo">
-        <a href="./index.html"><h1>JPIEE</h1></a>
-      </div>
-      <div class="my-navbar">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./aboutUs.html">About Us</a></li>
-        <li class="dropdown">
-          <a
-            href="./courses/courses.html"
-            class="dropdown-toggle"
-            role="button"
-            id="coursesDropdown"
-            data-bs-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            Courses
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
-            <li>
-              <a class="dropdown-item" href="./courses/nursing/nursing.html"
-                >College of Nursing
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="./courses/pharmacy/pharmacy.html"
-                >School of Pharmacy</a
-              >
-            </li>
-            <li>
-              <a
-                class="dropdown-item"
-                href="./courses/alliedMedSc/alliedMedSc.html"
-                >School of Medical Technical Education</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li><a href="./hostel.html">Hostel</a></li>
-        <li><a href="./facilities.html">Facilities</a></li>
-        <li><a href="./scholarship.html">Scholarship</a></li>
-        <li><a href="./announcements.html">Announcements</a></li>
-        <li><a href="./contactUs.html">Contact</a></li>
-      </div>
-      <div>
-        <button
-          class="my-admission-query"
-          data-bs-toggle="modal"
-          data-bs-target="#admissionQueryModal"
-        >
-          Admission Query
-        </button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JPIEE - Facilities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
-      <button
-        class="navbar-toggler d-md-none menu-button"
-        id="menuButton"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon">
-          <svg
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                d="M20 7L4 7"
-                stroke="#ffffff"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <path
-                d="M20 12L4 12"
-                stroke="#ffffff"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-              <path
-                d="M20 17L4 17"
-                stroke="#ffffff"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              ></path>
-            </g>
-          </svg>
-        </span>
-      </button>
-    </header>
-    <div class="collapse navbar-collapse mobile-menu" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./aboutUs.html">About</a>
-        </li>
-        <li class="nav-item">
-          <div class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="coursesDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Courses
+  <link rel="stylesheet" href="../css/index/index.css" />
+  <link rel="stylesheet" href="../css/index/header.css" />
+  <link rel="stylesheet" href="../css/facilities.css" />
+  <link rel="stylesheet" href="../css/index/footer.css">
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="my-container">
+    <div class="my-logo">
+      <a href="./index.html">
+        <h1>JPIEE</h1>
+      </a>
+    </div>
+    <div class="my-navbar">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./aboutUs.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="./courses/courses.html" class="dropdown-toggle" role="button" id="coursesDropdown"
+          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Courses
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+          <li>
+            <a class="dropdown-item" href="./courses/nursing/nursing.html">College of Nursing
             </a>
-            <ul
-              class="dropdown-menu forMobile"
-              aria-labelledby="coursesDropdown"
-            >
-              <li>
-                <a class="dropdown-item" href="./courses/nursing/nursing.html"
-                  >College of Nursing</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="./courses/pharmacy/pharmacy.html"
-                  >School of Pharmacy</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="./courses/alliedMedSc/alliedMedSc.html"
-                  >School of Medical Technical Education</a
-                >
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./hostel.html">Hostel</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./facilities.html">Facilities</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./scholarship.html">Scholarship</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./announcements.html">Announcements</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contactUs.html">Contact</a>
-        </li>
-      </ul>
-      <!-- Admission Query Button for smaller screens -->
-      <button
-        type="button"
-        class="btn btn-primary d-md-none"
-        data-bs-toggle="modal"
-        data-bs-target="#admissionQueryModal"
-      >
+          </li>
+          <li>
+            <a class="dropdown-item" href="./courses/pharmacy/pharmacy.html">School of Pharmacy</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="./courses/alliedMedSc/alliedMedSc.html">School of Medical Technical
+              Education</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="./hostel.html">Hostel</a></li>
+      <li><a href="./facilities.html">Facilities</a></li>
+      <li><a href="./scholarship.html">Scholarship</a></li>
+      <li><a href="./announcements.html">Announcements</a></li>
+      <li><a href="./contactUs.html">Contact</a></li>
+    </div>
+    <div>
+      <button class="my-admission-query" data-bs-toggle="modal" data-bs-target="#admissionQueryModal">
         Admission Query
       </button>
     </div>
-    <!-- header end -->
 
-    <!-- code for facility start  -->
-    <div class="facility-heading"><h2>FACILITIES</h2></div>
-         <div class="facilities-para">
-         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam enim praesentium voluptates similique, quod autem ex alias amet itaque maiores ullam ea nisi placeat earum officiis dolor. Aliquam assumenda ducimus non repudiandae praesentium voluptate deleniti maxime id veniam eveniet, ullam odio possimus tenetur perspiciatis totam doloribus, veritatis dolore blanditiis dolores nostrum molestias! Illum error, libero voluptas consequatur, totam assumenda blanditiis ea mollitia sit cum neque corporis temporibus magnam eius perspiciatis. Deserunt qui itaque odit similique et neque temporibus cumque quas delectus numquam autem explicabo iusto veritatis nulla reprehenderit saepe, aut commodi omnis nemo earum aliquam incidunt asperiores! Quo dicta officia debitis numquam voluptates repellendus molestias eveniet quaerat, nulla, itaque aspernatur consequuntur iusto excepturi dignissimos veritatis provident dolorem earum repellat beatae tempore ea quidem ad! Sint deleniti totam similique, accusamus adipisci doloribus ea repellat cum minima tempore, quis animi voluptatum porro velit obcaecati repudiandae labore, enim et voluptas molestias fugiat sequi!
-         </div>
-                
-          <ul class="facility-list">
-            <li><strong><h2>Classroom</h2></strong>
-              <div class="classroom facility-container">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, cum sint corporis reprehenderit nobis quos aspernatur quasi eius optio libero beatae ea! Maiores expedita consequatur magni quisquam, nemo sunt aspernatur!</p>
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Ambulance">
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Ambulance">
-              </div></li>
-
-            <li><strong><h2>Library</h2></strong>
-                      <div class="Library facility-container">
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, cum sint corporis reprehenderit nobis quos aspernatur quasi eius optio libero beatae ea! Maiores expedita consequatur magni quisquam, nemo sunt aspernatur!</p>
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Convention">
-                       <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Convention">
-                      </div></li>
-               
-            <li><strong><h2>Amphithetre</h2></strong>
-             <div class="Amphithetre facility-container">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, cum sint corporis reprehenderit nobis quos aspernatur quasi eius optio libero beatae ea! Maiores expedita consequatur magni quisquam, nemo sunt aspernatur!</p>
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Amphithetre">
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Amphithetre">
-             </div>
-             </li>
-                
-            <li><strong><h2>Convention Centre</h2></strong>
-             <div class="Convention-Centre facility-container">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, cum sint corporis reprehenderit nobis quos aspernatur quasi eius optio libero beatae ea! Maiores expedita consequatur magni quisquam, nemo sunt aspernatur!</p>
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Convention">
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Convention">
-             </div>
-             </li>
-               
-            <li><strong><h2>Restaurant</h2></strong>
-             <div class="Restaurant facility-container">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, cum sint corporis reprehenderit nobis quos aspernatur quasi eius optio libero beatae ea! Maiores expedita consequatur magni quisquam, nemo sunt aspernatur!</p>
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Restaurant">
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Restaurant">
-             </div>
-             </li>
-               
-            <li><strong><h2>ACLS Ambulances </h2></strong>
-            <div class="Ambulance facility-container"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, cum sint corporis reprehenderit nobis quos aspernatur quasi eius optio libero beatae ea! Maiores expedita consequatur magni quisquam, nemo sunt aspernatur!</p>
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="ACLS Ambulance">
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="ACLS Ambulance">
-              </div>
-                </li>
-                
-
-            <li><strong><h2>Transport</h2></strong>
-            <div class="Transport  facility-container">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, cum sint corporis reprehenderit nobis quos aspernatur quasi eius optio libero beatae ea! Maiores expedita consequatur magni quisquam, nemo sunt aspernatur!</p>
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Transport">
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Transport">
-            </div>
+    <button class="navbar-toggler d-md-none menu-button" id="menuButton" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M20 7L4 7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M20 12L4 12" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M20 17L4 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path>
+          </g>
+        </svg>
+      </span>
+    </button>
+  </header>
+  <div class="collapse navbar-collapse mobile-menu" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="./index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./aboutUs.html">About</a>
+      </li>
+      <li class="nav-item">
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Courses
+          </a>
+          <ul class="dropdown-menu forMobile" aria-labelledby="coursesDropdown">
+            <li>
+              <a class="dropdown-item" href="./courses/nursing/nursing.html">College of Nursing</a>
             </li>
-                
-
-                 <li><strong><h2>Health Benefits</h2></strong>
-            <div class="Health-Benefits facility-container">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, cum sint corporis reprehenderit nobis quos aspernatur quasi eius optio libero beatae ea! Maiores expedita consequatur magni quisquam, nemo sunt aspernatur!</p>
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Health Benefits">
-                <img class="facility-img" src="../assets/desktop/images/facility/Ambulance.png" alt="Health Benefits">
-            </div>
+            <li>
+              <a class="dropdown-item" href="./courses/pharmacy/pharmacy.html">School of Pharmacy</a>
             </li>
-            </ul>
-                
-                
-                     
-      
-
-    <div class="mid-container">
-      <h1>Other salient facilities</h1>
-    </div>
-    <div class="lower-container">
-      <div class="lower-container1">
-        <ul>
-          <li>Trained and experienced faculties in various sectors</li>
-          <li>Aadhaar Enabled Biometric Attendance System</li>
-          <li>Library with access to thousands of journals & e-books .</li>
-          <li>Practical Labs for separate courses .</li>
-          <li>
-            Spacious Seminar Rooms along with Audio-Video projector facility .
-          </li>
-          <li>Sound Proof Auditorium with Dolby Digital Sound .</li>
-          <li>System and seating capacity of 250 persons.</li>
-          <li>Separate hostel facilities for male & female.</li>
-          <li>Safe & Clean Drinking Water.</li>
-        </ul>
-      </div>
-      <div class="lower-container1">
-        <ul>
-          <li>24 hrs Hot & Cold water supply</li>
-          <li>24 hrs Housekeeping services</li>
-          <li>Disaster Management cum Fire Fighting Team members</li>
-          <li>24 hrs Internet with Wi-Fi facility</li>
-          <li>Whole campus under 24 hrs CCTV surveillance</li>
-          <li>24 hrs Power back-up</li>
-          <li>24 hrs Security services</li>
-          <li>In-house Pantry</li>
-          <li>Free Parking for 2 wheeler & 4 wheeler.</li>
-        </ul>
-      </div>
-    </div>
-    <!-- code for facility end  -->
-    
-       <!-- code for footer start -->
-       <footer class="footer-container">
-        <div class="footer-logo-container">
-          <a href="./index.html"><h1>JPIEE</h1></a>
-          
-        </div>
-        <div class="footer-quicklinks-container">
-          <h5>Quick Links</h5>
-          <ul class="links-list">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./aboutUs.html">About Us</a></li>
-            <li><a href="./courses/courses.html">Courses</a></li>
-            <li><a href="./facilities.html">Facilities</a></li>
-            <li><a href="./hostel.html">Hostel</a></li>
-            <li><a href="./scholarship.html">Scholarship</a></li>
-            <li><a href="./announcements.html">Announcements</a></li>
-            <li><a href="./contactUs.html">Contact Us</a></li>
+            <li>
+              <a class="dropdown-item" href="./courses/alliedMedSc/alliedMedSc.html">School of Medical Technical
+                Education</a>
+            </li>
           </ul>
         </div>
-        <div class="footer-contact-container">
-          <h5>Contact Us</h5>
-          <div class="footer-contactAddress">
-            <img
-              class="contact-logo"
-              src="../assets/desktop/icons/location.svg"
-              alt="address logo"
-            />
-            <p class="footer-contactPara">
-              Jaiprakash Institute of Education and Erudition <br />
-              (A Unit of Jaiprakash Hospital & Research Centre) <br />
-              Nitya Complex, NH 143 <br />
-              Rourkela - 769004, Odisha.
-            </p>
-          </div>
-          <div class="footer-mobile">
-            <img
-              class="contact-logo"
-              src="../assets/desktop/icons/mobile.svg"
-              alt="mobile logo"
-            />
-            <p class="footer-contactPara">9078884839, 9078884827</p>
-          </div>
-          <div class="footer-email">
-            <img
-              class="contact-logo"
-              src="../assets/desktop/icons/email.svg"
-              alt="email logo"
-            />
-            <p class="footer-contactPara">jpiee@jaiprakashhospitals.com</p>
-          </div>
-        </div>
-      </footer>
-      <!-- code for footer end -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./hostel.html">Hostel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./facilities.html">Facilities</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./scholarship.html">Scholarship</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./announcements.html">Announcements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./contactUs.html">Contact</a>
+      </li>
+    </ul>
+    <!-- Admission Query Button for smaller screens -->
+    <button type="button" class="btn btn-primary d-md-none" data-bs-toggle="modal"
+      data-bs-target="#admissionQueryModal">
+      Admission Query
+    </button>
+  </div>
+  <!-- header end -->
 
-    <!-- script start -->
-    <script
-      async
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <!-- script end -->
-    <!-- Add this code after the closing </script> tag in your body -->
-    <!-- this is the code for modal start-->
-    <div
-      class="modal fade"
-      id="admissionQueryModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Admission Query</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form id="queryForm">
-              <div class="mb-3">
-                <input
-                  type="text"
-                  id="fullName"
-                  class="form-control"
-                  placeholder="Full Name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  id="email"
-                  class="form-control"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="tel"
-                  id="number"
-                  class="form-control"
-                  placeholder="Mobile Number"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  id="address"
-                  class="form-control"
-                  placeholder="Address"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <select
-                
-                  id="selectedCourse"
-                  class="form-select"
-                  aria-label="Select Course"
-                >
-                  <option selected  value="Select Course" >Select Course</option>
-                  <option value="B.Sc Nursing">B.Sc Nursing</option>
-                  <option value="General nursing & Midwifery (GNM)">
-                    General nursing & Midwifery (GNM)
-                  </option>
-                  <option value="Auxiliary Nursing & Midwifery (ANM)">
-                    Auxiliary Nursing & Midwifery (ANM)
-                  </option>
-                  <option value="Diploma in Pharmacy (D. Pharma)">
-                    Diploma in Pharmacy (D. Pharma)
-                  </option>
-                  <option
-                    value="Diploma in Medical Laboratory Technology (DMLT)"
-                  >
-                    Diploma in Medical Laboratory Technology (DMLT)
-                  </option>
-                  <option
-                    value="Diploma in Medical Radiation Technology (DMRT)"
-                  >
-                    Diploma in Medical Radiation Technology (DMRT)
-                  </option>
-                  <option value="Diploma in Perfusion Technology (DPT)">
-                    Diploma in Perfusion Technology (DPT)
-                  </option>
-                  <option
-                    value="Diploma in Radiation Therapy Technology (DRTT)"
-                  >
-                    Diploma in Radiation Therapy Technology (DRTT)
-                  </option>
-                  <option value="Certified Ophthalmic Assistant (COA)">
-                    Certified Ophthalmic Assistant (COA)
-                  </option>
-                  <option
-                    value="Certified Ophthalmic Surgical Assistant (COSA)"
-                  >
-                    Certified Ophthalmic Surgical Assistant (COSA)
-                  </option>
-                  <option value="Certified Cath Lab Technician (CCLT)">
-                    Certified Cath Lab Technician (CCLT)
-                  </option>
-                  <option value="Certified Dialysis Technician (CDT)">
-                    Certified Dialysis Technician (CDT)
-                  </option>
-                  <option value="Certified Neuro Technician (CNT)">
-                    Certified Neuro Technician (CNT)
-                  </option>
-                  <option value="Certified OT Technician (COTT)">
-                    Certified OT Technician (COTT)
-                  </option>
-                  <option value="Certified Respiratory Therapist (CRT)">
-                    Certified Respiratory Therapist (CRT)
-                  </option>
-                  <option value="Certified ECG Technicians (CECGT)">
-                    Certified ECG Technicians (CECGT)
-                  </option>
-                  <option value="Certified EEG Technicians (CEEGT)">
-                    Certified EEG Technicians (CEEGT)
-                  </option>
-                  <option value="Certified EMG Technicians (CEMGT)">
-                    Certified EMG Technicians (CEMGT)
-                  </option>
-                  <option value="Certified Blood Collection Assistant (CBCA)">
-                    Certified Blood Collection Assistant (CBCA)
-                  </option>
-                  <option value="Certified Course in First Aid (CCFA)">
-                    Certified Course in First Aid (CCFA)
-                  </option>
-                  <option value="Certified Ward Technicians (CWT)">
-                    Certified Ward Technicians (CWT)
-                  </option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <textarea
-                  id="messageBox"
-                  class="form-control"
-                  rows="3"
-                  placeholder="Please type a message for information you are seeking."
-                ></textarea>
-              </div>
-              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-              <button
-                type="submit" class="btn btn-primary"
-                id="submitButton">Submit</button>
-              </button>
-            </form>
-            <div id="successMessage" style="display: none;">
-              <h3>Query submitted successfully!</h3>
-              <h3>Thank you for contacting JPIEE. Our team will contact you soon!</h3>
+  <!-- code for facility start  -->
+  <div class="facility-heading">
+    <h2>FACILITIES</h2>
+  </div>
+  <div class="facilities-para">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam enim praesentium voluptates similique, quod autem ex
+    alias amet itaque maiores ullam ea nisi placeat earum officiis dolor. Aliquam assumenda ducimus non repudiandae
+    praesentium voluptate deleniti maxime id veniam eveniet, ullam odio possimus tenetur perspiciatis totam doloribus,
+    veritatis dolore blanditiis dolores nostrum molestias! Illum error, libero voluptas consequatur, totam assumenda
+    blanditiis ea mollitia sit cum neque corporis temporibus magnam eius perspiciatis. Deserunt qui itaque odit
+    similique et neque temporibus cumque quas delectus numquam autem explicabo iusto veritatis nulla reprehenderit
+    saepe, aut commodi omnis nemo earum aliquam incidunt asperiores! Quo dicta officia debitis numquam voluptates
+    repellendus molestias eveniet quaerat, nulla, itaque aspernatur consequuntur iusto excepturi dignissimos veritatis
+    provident dolorem earum repellat beatae tempore ea quidem ad! Sint deleniti totam similique, accusamus adipisci
+    doloribus ea repellat cum minima tempore, quis animi voluptatum porro velit obcaecati repudiandae labore, enim et
+    voluptas molestias fugiat sequi!
+  </div>
+     <div class="facility-list">
+      <li class="facility-first-list"><strong>
+        <h2>Classroom</h2>
+      </strong>
+      <div class="classroom facility-container">
+        <div class="services-img">
+          <img src="../assets/desktop/images/facility/ClassRoom.jpg" alt="Ambulance">
+           <p>Classrooms with Fuly air-coditioned with audio video projector facility</p>
+        </div>
+       
+      </div>
+    </li> 
+    <li class="facility-first-list"><strong>
+        <h2>Library</h2>
+      </strong>
+      <div class="Library facility-container">
+        <div class="services-img"><img src="../assets/desktop/images/facility/Library.jpg" alt="Convention">
+          <p>Library with acces to thousands of journals & books</p>
+        </div>
+        
+        <br>
+        
+
+      </div>
+    </li> 
+
+    <li class="facility-first-list"><strong>
+        <h2>Amphithetre</h2>
+      </strong>
+      <div class="Amphithetre facility-container">
+        <div class="services-img"><img src="../assets/desktop/images/facility/Ambulance.jpg" alt="Amphithetre">
+          <p>Amphithetre : Place for Recreation</p>
+        </div>
+         
+      </div>
+    </li> 
+
+    <li class="facility-first-list"><strong>
+        <h2>Convention Centre</h2>
+      </strong>
+      <div class="Convention-Centre facility-container">
+        <div class="services-img"><img src="../assets/desktop/images/facility/Convention.jpg" alt="Convention">
+            <p>Convention centre : Sound proof Auditorium with high
+quality sound system and seating capacity of 250 persons.</p></div>
+      
+      </div>
+    </li> 
+
+     <li class="facility-first-list"><strong>
+        <h2>Restaurant</h2>
+      </strong>
+      <div class="Restaurant facility-container">
+        <div class="services-img"><img src="../assets/desktop/images/facility/ClassRoom.jpg" alt="Restaurant">
+          <p>Restaurant : The perfect hangout place</p></div>
+       
+      </div>
+    </li> 
+
+    <li class="facility-first-list"><strong>
+        <h2>ACLS Ambulances </h2>
+      </strong>
+      <div class="Ambulance facility-container">
+        <div class="services-img"> <img src="../assets/desktop/images/facility/Ambulance.jpg" alt="ACLS Ambulance">
+           <p>ACLS Ambulances with life saving equipments and drugs</p>
+        </div>
+      </div>
+    </li> 
+     </div>
+  <ul class="facility-second-list" >
+    <li><strong>
+        <h2>Transport</h2>
+      </strong>
+      <div class="Transport  facility-container">
+        <p>At Jaiprakash Institute of Education and Erudition, institute understand that easy and reliable
+          transportation
+          is essential to ensure that students can focus on their education and practical training without the hassle of
+          commuting. That's why institute offer comprehensive transportation services to meet your needs.
+        </p>
+        <p><strong>Hostel to College:</strong> Provide dedicated and secure transportation services for students
+          residing in our
+          college hostels. Well-maintained buses and vans run on established routes to pick up and drop off
+          students, ensuring a safe and comfortable journey to and from the college.
+        </p>
+        <p><strong>College to Hospital:</strong> As a student, you'll spend a significant amount of your time at
+          hospitals and
+          healthcare facilities for hands-on training and clinical experience. Institute offer transportation to and
+          from
+          these sites, making it easy for you to attend your clinical rotations and gain practical exposure in real
+          healthcare settings.</p>
+        <p><strong>Educational Tours and Hospital Visits:</strong> Throughout your academic journey, you may have
+          opportunities
+          for educational tours, hospital visits, and field trips as part of your curriculum. Institute arrange
+          transportation for such occasions to ensure that you have easy access to these valuable learning
+          experiences.</p>
+        <p><strong>Our transportation services are known for their reliability, safety, and punctuality. We have a team
+            of experienced and licensed drivers who prioritize your safety and comfort during your journey.</strong></p>
+        <div class="transport-facility-img">
+          <img src="../assets/desktop/images/facility/Ambulance.jpg" alt="Transport">
+          <img src="../assets/desktop/images/facility/Ambulance.jpg" alt="Transport">
+        </div>
+        <br>
+        <p> <strong> CONNECTIVITY</strong></p>
+        <p><strong>Airport - </strong>Nearest airport is Rourkela Airport. This airport is well connected by
+          daily direct flights to Bhubaneswar. And another nearest airport is Veer
+          Surendra Sai Airport, Jharsuguda (Distance- 131km). It is connected by
+          Express Highway with time coverage of 1:30 hrs. This airport is well
+          connected by daily direct flights to Kolkata, Bhubaneswar, New Delhi,
+          Hyderabad, Raipur, Bengaluru, Mumbai, and Chennai.</p>
+        <a href="https://maps.app.goo.gl/PxrmNrofRjg5vr378">
+          <h6 class="transport-map-links">https://maps.app.goo.gl/PxrmNrofRjg5vr378</h6>
+        </a>
+        <br>
+        <p> <strong> Railway station -</strong> Nearest railway junction is Rourkela Railway Station
+          (Distance- 8.3km). All trains routed Mumbai, Bilaspur, Kolkata, Bhubaneswar
+          have a scheduled stoppage here.</p>
+        <a href="https://goo.gl/maps/XeD5B31NPWuw1gs19">
+          <h5 class="transport-map-links">https://goo.gl/maps/XeD5B31NPWuw1gs19</h5>
+        </a>
+
+        <br>
+        <p> <strong> Bus stop -</strong> Nearest bus stop is Panposh (Distance- 1.3km). It is well
+          connected with all the major town / cities of the states like Odisha, Jharkhand,
+          Bihar, Chattisgarh and West Bengal.</p>
+        <a href="https://goo.gl/maps/A2EX9Lb6q7hHU5JY7">
+          <h5 class="transport-map-links">https://goo.gl/maps/A2EX9Lb6q7hHU5JY7</h5>
+        </a>
+
+      </div>
+    </li>
+
+
+    <li><strong>
+        <h2>HEALTH BENEFITS TO STUDENTS</h2>
+      </strong>
+      <div class="Health-Benefits facility-container">
+        <p>At Jaiprakash institute of Education and Erudition, Institute dedicated to not only providing a top-notch
+          education but also ensuring the overall well-being of our students. We believe that a healthy mind and
+          body are essential for academic success and personal growth. That's why we offer a range of health
+          benefits to support our students as well as their NOKs throughout their academic journey. </p>
+        <div class="services-img"> <img class="facility-img" src="../assets/desktop/images/facility/HealthBenefit.png"
+            alt="Health Benefits"></div>
+       <p><strong> Medical Dispensary facility</strong></p> 
+        <p>At Jaiprakash institute of Education and Erudition, your health and well-being are of ulmost importance to
+          us. We are dedicated to providing a safe and supportive environment for all our students. To ensure your
+          health needs, we offer comprehensive first aid and dispensary facilities on campus.Our well-equipped first aid
+          stations are strategically located throughout the campus to provide immediate
+          assistance in case of minor injuries, illnesses, or emergencies. Trained staff is available to administer
+          first
+          aid and offer guidance on appropriate medical care.</p>
+          <br>
+         <p><strong> Annual Health check-up</strong></p>
+The annual health check is designed to ensure that you are physically and mentally prepared for the
+rigors of education. It's a proactive step to identify and address any potential health concerns early,
+allowing us to provide you with the necessary support and guidance. The admission health check-up
+provided to you free of charge, which includes medical history review, physical examination, essential
+medical tests, health consultation, etc.
+<p><strong>Hospital discount policy at JPHRC</strong></p>
+Jaiprakash institute of Education and Erudition, have established a comprehensive Hospital Discount
+Policy that extends to both our students and their Next of Kin (NOK) at Jaiprakash hospital and research
+centre. This policy reflects our commitment to making quality healthcare more accessible and affordable
+for our college community.
+      </div>
+    </li>
+  </ul>
+  <h6>DISCOUNT POLICY FOR STUDENTS</h6>---
+
+
+
+
+
+  <div class="mid-container">
+    <h1>Other salient facilities</h1>
+  </div>
+  <div class="lower-container">
+    <div class="lower-container1">
+      <ul>
+        <li>Trained and experienced faculties in various sectors</li>
+        <li>Aadhaar Enabled Biometric Attendance System</li>
+        <li>Library with access to thousands of journals & e-books .</li>
+        <li>Practical Labs for separate courses .</li>
+        <li>
+          Spacious Seminar Rooms along with Audio-Video projector facility .
+        </li>
+        <li>Sound Proof Auditorium with Dolby Digital Sound .</li>
+        <li>System and seating capacity of 250 persons.</li>
+        <li>Separate hostel facilities for male & female.</li>
+        <li>Safe & Clean Drinking Water.</li>
+      </ul>
+    </div>
+    <div class="lower-container1">
+      <ul>
+        <li>24 hrs Hot & Cold water supply</li>
+        <li>24 hrs Housekeeping services</li>
+        <li>Disaster Management cum Fire Fighting Team members</li>
+        <li>24 hrs Internet with Wi-Fi facility</li>
+        <li>Whole campus under 24 hrs CCTV surveillance</li>
+        <li>24 hrs Power back-up</li>
+        <li>24 hrs Security services</li>
+        <li>In-house Pantry</li>
+        <li>Free Parking for 2 wheeler & 4 wheeler.</li>
+      </ul>
+    </div>
+  </div>
+  <!-- code for facility end  -->
+
+  <!-- code for footer start -->
+  <footer class="footer-container">
+    <div class="footer-logo-container">
+      <a href="./index.html">
+        <h1>JPIEE</h1>
+      </a>
+
+    </div>
+    <div class="footer-quicklinks-container">
+      <h5>Quick Links</h5>
+      <ul class="links-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./aboutUs.html">About Us</a></li>
+        <li><a href="./courses/courses.html">Courses</a></li>
+        <li><a href="./facilities.html">Facilities</a></li>
+        <li><a href="./hostel.html">Hostel</a></li>
+        <li><a href="./scholarship.html">Scholarship</a></li>
+        <li><a href="./announcements.html">Announcements</a></li>
+        <li><a href="./contactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact-container">
+      <h5>Contact Us</h5>
+      <div class="footer-contactAddress">
+        <img class="contact-logo" src="../assets/desktop/icons/location.svg" alt="address logo" />
+        <p class="footer-contactPara">
+          Jaiprakash Institute of Education and Erudition <br />
+          (A Unit of Jaiprakash Hospital & Research Centre) <br />
+          Nitya Complex, NH 143 <br />
+          Rourkela - 769004, Odisha.
+        </p>
+      </div>
+      <div class="footer-mobile">
+        <img class="contact-logo" src="../assets/desktop/icons/mobile.svg" alt="mobile logo" />
+        <p class="footer-contactPara">9078884839, 9078884827</p>
+      </div>
+      <div class="footer-email">
+        <img class="contact-logo" src="../assets/desktop/icons/email.svg" alt="email logo" />
+        <p class="footer-contactPara">jpiee@jaiprakashhospitals.com</p>
+      </div>
+    </div>
+  </footer>
+  <!-- code for footer end -->
+
+  <!-- script start -->
+  <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- script end -->
+  <!-- Add this code after the closing </script> tag in your body -->
+  <!-- this is the code for modal start-->
+  <div class="modal fade" id="admissionQueryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Admission Query</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="queryForm">
+            <div class="mb-3">
+              <input type="text" id="fullName" class="form-control" placeholder="Full Name" required />
             </div>
+            <div class="mb-3">
+              <input type="email" id="email" class="form-control" placeholder="Email" required />
+            </div>
+            <div class="mb-3">
+              <input type="tel" id="number" class="form-control" placeholder="Mobile Number" required />
+            </div>
+            <div class="mb-3">
+              <input type="text" id="address" class="form-control" placeholder="Address" required />
+            </div>
+            <div class="mb-3">
+              <select id="selectedCourse" class="form-select" aria-label="Select Course">
+                <option selected value="Select Course">Select Course</option>
+                <option value="B.Sc Nursing">B.Sc Nursing</option>
+                <option value="General nursing & Midwifery (GNM)">
+                  General nursing & Midwifery (GNM)
+                </option>
+                <option value="Auxiliary Nursing & Midwifery (ANM)">
+                  Auxiliary Nursing & Midwifery (ANM)
+                </option>
+                <option value="Diploma in Pharmacy (D. Pharma)">
+                  Diploma in Pharmacy (D. Pharma)
+                </option>
+                <option value="Diploma in Medical Laboratory Technology (DMLT)">
+                  Diploma in Medical Laboratory Technology (DMLT)
+                </option>
+                <option value="Diploma in Medical Radiation Technology (DMRT)">
+                  Diploma in Medical Radiation Technology (DMRT)
+                </option>
+                <option value="Diploma in Perfusion Technology (DPT)">
+                  Diploma in Perfusion Technology (DPT)
+                </option>
+                <option value="Diploma in Radiation Therapy Technology (DRTT)">
+                  Diploma in Radiation Therapy Technology (DRTT)
+                </option>
+                <option value="Certified Ophthalmic Assistant (COA)">
+                  Certified Ophthalmic Assistant (COA)
+                </option>
+                <option value="Certified Ophthalmic Surgical Assistant (COSA)">
+                  Certified Ophthalmic Surgical Assistant (COSA)
+                </option>
+                <option value="Certified Cath Lab Technician (CCLT)">
+                  Certified Cath Lab Technician (CCLT)
+                </option>
+                <option value="Certified Dialysis Technician (CDT)">
+                  Certified Dialysis Technician (CDT)
+                </option>
+                <option value="Certified Neuro Technician (CNT)">
+                  Certified Neuro Technician (CNT)
+                </option>
+                <option value="Certified OT Technician (COTT)">
+                  Certified OT Technician (COTT)
+                </option>
+                <option value="Certified Respiratory Therapist (CRT)">
+                  Certified Respiratory Therapist (CRT)
+                </option>
+                <option value="Certified ECG Technicians (CECGT)">
+                  Certified ECG Technicians (CECGT)
+                </option>
+                <option value="Certified EEG Technicians (CEEGT)">
+                  Certified EEG Technicians (CEEGT)
+                </option>
+                <option value="Certified EMG Technicians (CEMGT)">
+                  Certified EMG Technicians (CEMGT)
+                </option>
+                <option value="Certified Blood Collection Assistant (CBCA)">
+                  Certified Blood Collection Assistant (CBCA)
+                </option>
+                <option value="Certified Course in First Aid (CCFA)">
+                  Certified Course in First Aid (CCFA)
+                </option>
+                <option value="Certified Ward Technicians (CWT)">
+                  Certified Ward Technicians (CWT)
+                </option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <textarea id="messageBox" class="form-control" rows="3"
+                placeholder="Please type a message for information you are seeking."></textarea>
+            </div>
+            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+            <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+            </button>
+          </form>
+          <div id="successMessage" style="display: none;">
+            <h3>Query submitted successfully!</h3>
+            <h3>Thank you for contacting JPIEE. Our team will contact you soon!</h3>
           </div>
         </div>
       </div>
     </div>
-    <!-- this is the code for modal end-->
-    <script type="module" src="../modules/submitForm.js"></script>
-    <script type="module" src="../modules/menuClose.js"></script>
+  </div>
+  <!-- this is the code for modal end-->
+  <script type="module" src="../modules/submitForm.js"></script>
+  <script type="module" src="../modules/menuClose.js"></script>
 
-  </body>
+</body>
+
 </html>
