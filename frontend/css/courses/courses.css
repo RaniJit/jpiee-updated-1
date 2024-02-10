@@ -35,14 +35,18 @@
   transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   width: 100%;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
+.img-section:hover .text {
+  transform: translate(-50%, -50%) scale(1.1);
+}
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
   .courses-main-heading {
