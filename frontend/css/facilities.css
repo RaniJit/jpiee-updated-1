@@ -69,118 +69,104 @@
   justify-content: center;
       flex-direction: column;
 }
+/* General styling */
 
-@media only screen and (min-width: 1024px) {
-  .facility-heading {
-    margin-top: 120px;
-  }
+/* Header styling */
 
-  .facilities-para {
-    font-size: 18px;
-    padding: 40px;
-  }
 
-  .facility-heading>h2 {
-    margin-top: 150px;
-    font-size: 36px;
-  }
-
-  .facility-container {
-    padding: 24px;
-    padding-top: 0;
-  }
-
-  .facility-container>p {
-    font-size: 24px;
-  }
-
-  .lower-container {
-    padding: 0 50px;
-  }
+/* Facility Section styling */
+.facility-heading {
+  margin-top: 20px;
+  text-align: center;
+  color: #008080;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
 }
 
-/* Tablet view */
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-
-
-  .facilities-para {
-    font-size: 22px;
-    padding: 35px;
-  }
-
-
-  .facility-container {
-    padding: 20px;
-  }
-
-  .facility-container>p {
-    font-size: 22px;
-  }
-
-  .lower-container {
-    padding: 0 40px;
-  }
-
-  .facility-img {
-    width: 540px;
-  }
+.facilities-para {
+  padding: 20px;
+  font-size: 16px;
 }
 
-/* Mobile view */
-@media only screen and (max-width: 767px) {
-  .facilities-para {
-    font-size: 18px;
-    padding: 25px;
-  }
-
-  .facility-heading>h2 {
-    margin-top: 50px;
-    /* Adjust as needed */
-    font-size: 24px;
-    /* Adjust as needed */
-  }
-
-  .facility-container {
-    padding: 16px;
-    padding-top: 0;
-  }
-
-  .facility-container>p {
-    font-size: 18px;
-  }
-
-  .lower-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-  }
-
-  .lower-container1 {
-    margin-bottom: 20px;
-    /* Adjust as needed */
-  }
-
-  .facility-img {
-    width: 100%;
-    /* Make images responsive */
-    max-width: 100%;
-    /* Ensure images don't exceed container width */
-    height: auto;
-  }
-
-  mid-container h1 {
-    margin-bottom: 10px;
-    /* Adjust as needed */
-  }
-
-  .lower-container1 ul {
-    padding-left: 10px;
-    /* Adjust as needed */
-  }
-
-  .lower-container1 ul li {
-    margin-bottom: 5px;
-    /* Adjust as needed */
-  }
+.facility-list {
+  padding: 0 15px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
+.facility-first-list {
+  flex: 1 0 calc(50% - 20px);
+}
+
+.facility-container {
+  padding: 16px;
+  gap: 16px;
+  padding-top: 0;
+}
+
+.facility-container>p {
+  font-size: 16px;
+}
+
+.mid-container{
+  padding-left: 35px;
+}
+
+ /* ... your existing CSS ... */
+
+ /* Mobile responsiveness with fixed max-width */
+ /* ... your existing CSS ... */
+
+ /* Mobile responsiveness with fixed max-width */
+ /* Mobile responsiveness with fixed max-width */
+ @media screen and (max-width: 768px) {
+   .facility-first-list {
+     flex: 1 0 calc(100% - 20px);
+     /* Adjust to take full width on smaller screens */
+   }
+
+   .facility-container {
+     padding: 16px;
+     gap: 16px;
+     padding-top: 0;
+   }
+
+   .facility-list {
+     padding: 0 10px;
+     flex-direction: column;
+     /* Adjust to display list items in a column on smaller screens */
+   }
+
+   .mid-container {
+     padding-left: 15px;
+     padding-right: 15px;
+     /* Add padding to both sides for better spacing */
+   }
+
+   .facilities-para {
+     padding: 10px;
+     max-width: 100%;
+     /* Ensure text takes up full width */
+     margin: auto;
+     /* Center text within the available space */
+   }
+
+   .services-img img {
+     width: 100%;
+     /* Adjust image width to take up the full width of the container */
+     max-width: 300px;
+     /* Set a maximum width to maintain image quality */
+   }
+
+   .facility-para-list {
+     font-size: 14px;
+     /* Increase font size for better readability on smaller screens */
+   }
+     .transport-facility-img img{
+      width: 100%;
+     }
+ }
