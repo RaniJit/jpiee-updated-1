@@ -7,7 +7,7 @@
   padding: 30px;
 }
 
-.facility-heading>h2 {
+.facility-heading > h2 {
   margin-top: 120px;
   text-align: center;
   color: #008080;
@@ -17,15 +17,13 @@
   font-weight: 900;
 }
 
-
 .facility-container {
   padding: 16px;
   gap: 16px;
   padding-top: 0;
-
 }
 
-.facility-container>p {
+.facility-container > p {
   font-size: 20px;
 }
 
@@ -33,9 +31,8 @@
   list-style: none;
   flex: 1 0 calc(50% - 20px);
 }
-.facility-second-list{
+.facility-second-list {
   list-style: none;
-
 }
 
 .lower-container {
@@ -48,12 +45,12 @@
 .facility-list {
   padding: 0 25px;
   list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    /* Adjust as needed for space between items */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* Adjust as needed for space between items */
 }
-.facility-first-list{
+.facility-first-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,25 +58,25 @@
 
 .transport-map-links {
   color: teal;
+  font-size: 16px;
 }
 
 .services-img {
   display: flex;
   align-items: center;
   justify-content: center;
-      flex-direction: column;
+  flex-direction: column;
 }
 /* General styling */
 
 /* Header styling */
-
 
 /* Facility Section styling */
 .facility-heading {
   margin-top: 20px;
   text-align: center;
   color: #008080;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 900;
@@ -108,65 +105,65 @@
   padding-top: 0;
 }
 
-.facility-container>p {
+.facility-container > p {
   font-size: 16px;
 }
 
-.mid-container{
+.mid-container {
   padding-left: 35px;
 }
 
- /* ... your existing CSS ... */
+/* ... your existing CSS ... */
 
- /* Mobile responsiveness with fixed max-width */
- /* ... your existing CSS ... */
+/* Mobile responsiveness with fixed max-width */
+/* ... your existing CSS ... */
 
- /* Mobile responsiveness with fixed max-width */
- /* Mobile responsiveness with fixed max-width */
- @media screen and (max-width: 768px) {
-   .facility-first-list {
-     flex: 1 0 calc(100% - 20px);
-     /* Adjust to take full width on smaller screens */
-   }
+/* Mobile responsiveness with fixed max-width */
+/* Mobile responsiveness with fixed max-width */
+@media screen and (max-width: 768px) {
+  .facility-first-list {
+    flex: 1 0 calc(100% - 20px);
+    /* Adjust to take full width on smaller screens */
+  }
 
-   .facility-container {
-     padding: 16px;
-     gap: 16px;
-     padding-top: 0;
-   }
+  .facility-container {
+    padding: 16px;
+    gap: 16px;
+    padding-top: 0;
+  }
 
-   .facility-list {
-     padding: 0 10px;
-     flex-direction: column;
-     /* Adjust to display list items in a column on smaller screens */
-   }
+  .facility-list {
+    padding: 0 10px;
+    flex-direction: column;
+    /* Adjust to display list items in a column on smaller screens */
+  }
 
-   .mid-container {
-     padding-left: 15px;
-     padding-right: 15px;
-     /* Add padding to both sides for better spacing */
-   }
+  .mid-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    /* Add padding to both sides for better spacing */
+  }
 
-   .facilities-para {
-     padding: 10px;
-     max-width: 100%;
-     /* Ensure text takes up full width */
-     margin: auto;
-     /* Center text within the available space */
-   }
+  .facilities-para {
+    padding: 10px;
+    max-width: 100%;
+    /* Ensure text takes up full width */
+    margin: auto;
+    /* Center text within the available space */
+  }
 
-   .services-img img {
-     width: 100%;
-     /* Adjust image width to take up the full width of the container */
-     max-width: 300px;
-     /* Set a maximum width to maintain image quality */
-   }
+  .services-img img {
+    width: 100%;
+    /* Adjust image width to take up the full width of the container */
+    max-width: 300px;
+    /* Set a maximum width to maintain image quality */
+  }
 
-   .facility-para-list {
-     font-size: 14px;
-     /* Increase font size for better readability on smaller screens */
-   }
-     .transport-facility-img img{
-      width: 100%;
-     }
- }
+  .facility-para-list {
+    font-size: 14px;
+    /* Increase font size for better readability on smaller screens */
+  }
+  .transport-facility-img img {
+    width: 100%;
+  }
+}
