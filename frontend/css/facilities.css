@@ -112,6 +112,9 @@
 .mid-container {
   padding-left: 35px;
 }
+.transport-facility-img img{
+  width: 300px;
+}
 
 /* ... your existing CSS ... */
 
