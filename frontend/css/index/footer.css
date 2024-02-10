@@ -26,16 +26,19 @@
 .footer-contactAddress {
   display: flex;
   align-items: center;
+  /* gap: 30px; */
 }
 
 .footer-mobile {
   display: flex;
   align-items: center;
+  /* gap: 30px; */
 }
 
 .footer-email {
   display: flex;
   align-items: center;
+  /* gap: 30px; */
 }
 
 .footer-contactPara {
@@ -45,18 +48,9 @@
 .contact-logo {
   margin-bottom: 16px;
 }
-.footer-logo-container > a > h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-}
-.footer-quicklinks-container > h5{
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-}
-.footer-contact-container > h5{
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-}
+
+/* Existing styles */
+
 /* Media query for screens smaller than 600px (typical mobile devices) */
 @media only screen and (max-width: 640px) {
   .footer-container {
@@ -70,7 +64,6 @@
 
   .footer-contact-container {
     margin-top: 20px;
-    padding: 0 8px;
   }
 
   .footer-contactAddress,
