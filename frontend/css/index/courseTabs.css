@@ -127,6 +127,7 @@ button.tab.btn.btn-outline-light.active-tab:hover {
   }
   .courseTabs-content {
     width: 100vw;
+    justify-content: center;
   }
   .tab {
     padding: 6px 4px;
