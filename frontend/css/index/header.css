@@ -147,3 +147,7 @@ div#navbarNav.navbar-collapse.mobile-menu {
 #successMessage {
   color: white !important;
 }
+button.btn.btn-primary {
+  width: 100%;
+  border-radius: 0px;
+}
