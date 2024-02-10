@@ -110,7 +110,7 @@ button.tab.btn.btn-outline-light.active-tab:hover {
 
   /* Styles for the courseTabs outer box */
   .courseTabs-outerBox {
-    width: 130px;
+    width: 100px;
     height: 100px;
   }
 
@@ -121,10 +121,14 @@ button.tab.btn.btn-outline-light.active-tab:hover {
     line-height: 15px;
   }
   button.tab.btn.btn-outline-light {
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
+    width: 120px;
   }
   .courseTabs-content {
     width: 100vw;
+  }
+  .tab {
+    padding: 6px 4px;
   }
 }

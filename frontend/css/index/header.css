@@ -5,7 +5,7 @@
   justify-content: space-between;
   height: 100px;
   background: teal;
-  padding: 0 8px;
+  padding: 0 24px;
   gap: 36px;
   position: fixed;
   top: 0;
@@ -16,10 +16,10 @@
 }
 
 /* css for logo start */
-.my-logo {
+.my-logo > a > h1 {
   color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  font-family: "Montserrat", "Poppins", sans-serif;
+  font-weight: 700;
 }
 /* css for logo end */
 
