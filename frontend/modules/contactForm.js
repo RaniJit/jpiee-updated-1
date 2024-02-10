@@ -18,6 +18,13 @@ function submitContactForm() {
     document.getElementById("contact_submitForm").disabled = false;
     return;
   }
+  // Check if mobileNumber is exactly 10 digits
+  if (mobileNumber.length !== 10 || isNaN(mobileNumber)) {
+    alert("Please enter a valid 10-digit mobile number.");
+    // Re-enable the submit button
+    document.getElementById("submitButton").disabled = false;
+    return;
+  }
 
   // Assume you have a backend API endpoint for form submission
   // You can replace this with your actual backend endpoint

@@ -16,7 +16,13 @@ function submitForm() {
     document.getElementById("submitButton").disabled = false;
     return;
   }
-
+  // Check if mobileNumber is exactly 10 digits
+  if (mobileNumber.length !== 10 || isNaN(mobileNumber)) {
+    alert("Please enter a valid 10-digit mobile number.");
+    // Re-enable the submit button
+    document.getElementById("submitButton").disabled = false;
+    return;
+  }
   // Assume you have a backend API endpoint for form submission
   // You can replace this with your actual backend endpoint
   const endpoint = "http://localhost:5000/api/submit-form";
@@ -48,7 +54,14 @@ function submitForm() {
         // Reset form fields
         document.getElementById("queryForm").reset();
       } else {
-        // Display error message if submission fails
+        // Display specific error message received from the backend
+        return response.json();
+      }
+    })
+    .then((errorData) => {
+      if (errorData && errorData.name === "SequelizeUniqueConstraintError") {
+        alert("Error: " + errorData.errors[0].message);
+      } else {
         alert("Failed to submit the query. Please try again.");
       }
     })
