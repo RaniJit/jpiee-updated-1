@@ -33,9 +33,11 @@ a {
   list-style: none;
   gap: 16px;
   color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   flex-wrap: wrap;
+}
+.my-navbar > li > a {
+  font-family: "Montserrat", sans-serif;
 }
 .my-admission-query {
   border-radius: 6px;
