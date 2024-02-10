@@ -1,8 +1,6 @@
 function submitContactForm() {
   // Disable the submit button to prevent multiple submissions
 
-  console.log("contact_submitForm function called");
-
   document.getElementById("contact_submitForm").disabled = true;
 
   // Get form values
@@ -34,7 +32,6 @@ function submitContactForm() {
     selectedCourse: selectedCourse,
     messageBox: messageBox,
   };
-  console.log("formData:::", formData);
   // Send a POST request to the backend
   fetch(endpoint, {
     method: "POST",

@@ -1,8 +1,6 @@
 function submitCallbackForm() {
   // Disable the submit button to prevent multiple submissions
 
-  console.log("callback_submitButton function called");
-
   document.getElementById("callback_submitButton").disabled = true;
 
   // Get form values
@@ -34,7 +32,6 @@ function submitCallbackForm() {
     selectedCourse: selectedCourse,
     messageBox: messageBox,
   };
-  console.log("formData:::", formData);
   // Send a POST request to the backend
   fetch(endpoint, {
     method: "POST",
