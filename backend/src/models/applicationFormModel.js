@@ -13,7 +13,7 @@ const ApplicationForm = sequelize.define("ApplicationForm", {
   email: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true,
+    // unique: true,
     validate: {
       notEmpty: true,
       isEmail: true,

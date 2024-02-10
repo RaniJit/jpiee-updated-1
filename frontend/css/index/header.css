@@ -5,7 +5,7 @@
   justify-content: space-between;
   height: 100px;
   background: teal;
-  padding: 0 8px;
+  padding: 0 24px;
   gap: 36px;
   position: fixed;
   top: 0;
@@ -16,11 +16,11 @@
 }
 
 /* css for logo start */
-/* .my-logo > a > h1 {
+.my-logo > a > h1 {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Poppins", sans-serif;
   font-weight: 700;
-} */
+}
 /* css for logo end */
 
 /* css for navbar start */
@@ -44,8 +44,8 @@ a {
   border: none;
   background: #ff9432;
   color: white;
-  font-weight: 600;
-  padding: 12px;
+  font-weight: 500;
+  padding: 8px 4px;
 }
 
 a#coursesDropdown.dropdown-toggle {
