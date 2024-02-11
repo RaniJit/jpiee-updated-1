@@ -58,7 +58,7 @@
 
 .transport-map-links {
   color: teal;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .services-img {
@@ -111,6 +111,9 @@
 
 .mid-container {
   padding-left: 35px;
+}
+.transport-facility-img img{
+  width: 300px;
 }
 
 /* ... your existing CSS ... */

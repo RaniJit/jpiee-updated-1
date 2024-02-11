@@ -1,8 +1,10 @@
-div#carouselExampleIndicatorsMobile.carousel.slide.d-md-none.pointer-event {
-  top: 100px;
+div#carouselExampleIndicatorsMobile.carousel.slide {
+  /* top: 100px; */
+  margin: 100px 0 40px 0;
 }
 div#carouselExampleIndicators.carousel.slide {
-  top: 100px;
+  /* margin-top: 100px; */
+  margin: 100px 0 40px 0;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {

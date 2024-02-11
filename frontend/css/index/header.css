@@ -143,7 +143,15 @@ div#navbarNav.navbar-collapse.mobile-menu {
   z-index: 10;
   top: 100px;
   min-width: 200px;
+  right: 0;
 }
 #successMessage {
   color: white !important;
+}
+
+.mob-admission-query-btn {
+  width: 100%;
+}
+button.btn.btn-primary.d-md-none {
+  border-radius: 0px;
 }
