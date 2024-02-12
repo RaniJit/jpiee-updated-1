@@ -58,13 +58,6 @@ function submitForm() {
         return response.json();
       }
     })
-    .then((errorData) => {
-      if (errorData && errorData.name === "SequelizeUniqueConstraintError") {
-        alert("Error: " + errorData.errors[0].message);
-      } else {
-        alert("Failed to submit the query. Please try again.");
-      }
-    })
     .catch((error) => {
       console.error("Error submitting form:", error);
       alert("An unexpected error occurred. Please try again.");
